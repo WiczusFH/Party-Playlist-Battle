@@ -33,5 +33,20 @@ namespace Party_Playlist_Battle
         public void prompt() {
             throw new System.NotImplementedException();
         }
+
+        /// <summary>
+        /// win=1, draw=0, lose=-1
+        /// </summary>
+        public int action_eval() {
+            throw new System.NotImplementedException();
+        }
+
+        /// <summary>
+        /// 1 win, 0 draw, -1 lose
+        /// </summary>
+        public static int action_eval(Battle_Actions action_1, Battle_Actions action_2) {
+
+            return 0;
+        }
     }
 }

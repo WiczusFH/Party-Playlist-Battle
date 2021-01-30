@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Comment CommentText="Maybe abstract class instead, or static class&#xD;&#xA;">
-    <Position X="17.656" Y="7.177" Height="0.75" Width="1.7" />
-  </Comment>
   <Class Name="Party_Playlist_Battle.Connection_Listener">
     <Position X="5.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
@@ -44,7 +41,7 @@
   <Class Name="Party_Playlist_Battle.Battle">
     <Position X="10.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAJAAAAAAAABAAAAIAAAAAAAAEAAAAAAAAAAAAAEAAA=</HashCode>
+      <HashCode>AAJAAAAACAABAAAEIAAAAAAAAEAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>Battle.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -92,7 +89,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Party_Playlist_Battle.Response_Tools">
-    <Position X="14" Y="7" Width="1.5" />
+    <Position X="14" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Response_Tools.cs</FileName>
