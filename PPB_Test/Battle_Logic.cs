@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Party_Playlist_Battle;
+
 namespace PPB_Test
 {
     [TestClass]
@@ -39,6 +40,7 @@ namespace PPB_Test
 
         }
 
-
+        [TestMethod]
+        public void joinBattle() { }
     }
 }

@@ -41,7 +41,7 @@
   <Class Name="Party_Playlist_Battle.Battle">
     <Position X="10.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAJAAAAACAABAAAEIAAAAAAAAEAAAAAAAAAAAAAEAAA=</HashCode>
+      <HashCode>AAJAAAAACAABAAAAIAAAAAAAAEAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>Battle.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -51,7 +51,7 @@
   <Class Name="Party_Playlist_Battle.Profile_Manager">
     <Position X="14.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAIAAgAAAAAAAAAAAAAA=</HashCode>
       <FileName>Profile_Manager.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -89,28 +89,28 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Party_Playlist_Battle.Response_Tools">
-    <Position X="14" Y="7.25" Width="1.5" />
+    <Position X="14.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Response_Tools.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Party_Playlist_Battle.MC_Tools">
-    <Position X="14" Y="5.75" Width="1.5" />
+    <Position X="14.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MC_Tools.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="Party_Playlist_Battle.user_battle_info">
-    <Position X="12.5" Y="3.75" Width="1.5" />
+    <Position X="14.25" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAECAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
       <FileName>user_battle_info.cs</FileName>
     </TypeIdentifier>
   </Struct>
   <Enum Name="Party_Playlist_Battle.Battle_Actions">
-    <Position X="16" Y="5.75" Width="1.5" />
+    <Position X="16" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAEAAAAAAAAAACAAAAAAgQAAAAAA=</HashCode>
       <FileName>BattleChoices.cs</FileName>

@@ -34,12 +34,6 @@ namespace Party_Playlist_Battle
             throw new System.NotImplementedException();
         }
 
-        /// <summary>
-        /// win=1, draw=0, lose=-1
-        /// </summary>
-        public int action_eval() {
-            throw new System.NotImplementedException();
-        }
 
         /// <summary>
         /// 1 win, 0 draw, -1 lose

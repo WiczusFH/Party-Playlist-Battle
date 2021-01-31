@@ -9,5 +9,13 @@ namespace Party_Playlist_Battle
         public void change_nickname() {
             throw new System.NotImplementedException();
         }
+
+        public void update_scoreboard() {
+            throw new System.NotImplementedException();
+        }
+
+        public void display_scoreboard() {
+            throw new System.NotImplementedException();
+        }
     }
 }
