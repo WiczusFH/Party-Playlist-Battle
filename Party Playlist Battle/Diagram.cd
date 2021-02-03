@@ -3,8 +3,8 @@
   <Class Name="Party_Playlist_Battle.Connection_Listener">
     <Position X="5.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEIAAAAAQCAAAAhAAAACAABAIAAAAAIIEAAAAAAAAA=</HashCode>
-      <FileName>ConnectionListener.cs</FileName>
+      <HashCode>AAEIAAAAAQCAAAAhAAAACAABAIAAAAAAIEAAAAAAAAA=</HashCode>
+      <FileName>REST\ConnectionListener.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Active_Connection" />
@@ -32,7 +32,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Party_Playlist_Battle.Playlist">
-    <Position X="5.25" Y="4.75" Width="1.5" />
+    <Position X="5.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAMAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
       <FileName>Playlist.cs</FileName>
@@ -58,8 +58,8 @@
   <Class Name="Party_Playlist_Battle.Active_Connection">
     <Position X="7.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAUAAgAAAEABAACBAAABCAAQAAEAgAAAAAAAAAAAAiA=</HashCode>
-      <FileName>Active_Connection.cs</FileName>
+      <HashCode>BAUAAgAAAFABAACBAAABCAAQAAEAgAAAAAAABAAAAiA=</HashCode>
+      <FileName>REST\Active_Connection.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Active_User" />
@@ -81,10 +81,10 @@
     <Position X="3" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAgAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Server.cs</FileName>
+      <FileName>REST\Server.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="listener" />
+      <Field Name="listener" />
       <Property Name="Playlist" />
     </ShowAsAssociation>
   </Class>
@@ -102,18 +102,11 @@
       <FileName>MC_Tools.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="REST_Webservice_Assignment.Request">
-    <Position X="5" Y="8.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AIEAAAQAAAAgAAAAAAAAAAAAAQAAAAAAAIAAAACAAAA=</HashCode>
-      <FileName>Request.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Party_Playlist_Battle.Response">
-    <Position X="9.25" Y="8.5" Width="1.5" />
+    <Position X="10.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAQAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAEAAACAAAAA=</HashCode>
-      <FileName>Response.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>REST\Response.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="Party_Playlist_Battle.user_battle_info">
@@ -134,7 +127,7 @@
     <Position X="7" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Status_Code.cs</FileName>
+      <FileName>REST\Status_Code.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

@@ -6,9 +6,9 @@ namespace PPB_Test
     [TestClass]
     public class Battle_Logic
     {
-        [Ignore]
         [TestMethod]
         public void action_eval() {
+            //25 methoden wäre sinnlos
             Assert.AreEqual(0, Battle.action_eval(Battle_Actions.Spock,Battle_Actions.Spock));
             Assert.AreEqual(1, Battle.action_eval(Battle_Actions.Spock,Battle_Actions.Rock));
             Assert.AreEqual(1, Battle.action_eval(Battle_Actions.Spock,Battle_Actions.Scissors));

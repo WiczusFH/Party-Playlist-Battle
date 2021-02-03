@@ -19,6 +19,7 @@ namespace Party_Playlist_Battle
         /// </summary>
         public void run() {
             listener = new Connection_Listener();
+            listener.start();
 
             //commands
             bool keepalive = true;
