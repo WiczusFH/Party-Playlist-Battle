@@ -6,6 +6,7 @@ namespace PPB_Test
     [TestClass]
     public class Battle_Logic
     {
+        [Ignore]
         [TestMethod]
         public void action_eval() {
             Assert.AreEqual(0, Battle.action_eval(Battle_Actions.Spock,Battle_Actions.Spock));

@@ -4,7 +4,7 @@ using Party_Playlist_Battle;
 namespace PPB_Test
 {
     [TestClass]
-    class DB_Acess
+    public class DB_Acess
     {
         //get_mcid_by_name
         //get_name_from_mcid

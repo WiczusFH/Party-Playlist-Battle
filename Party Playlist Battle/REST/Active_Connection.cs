@@ -1,11 +1,53 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Net;
 using System.Net.Sockets;
+using System.Reflection;
+using System.Threading;
+using System.Threading.Tasks;
+using System.IO;
 namespace Party_Playlist_Battle
 {
-    public class Active_Connection
-    {
+    public class Active_Connection {
+        public bool shutdown { get; set; } = false;
+        public int id { get; }
+        public TcpClient client;
+        public Stream clistream;
+        
+
+        public Active_Connection(TcpClient client, int id) {
+            this.id = id;
+            this.client = client;
+            Task conn = connection();
+        }
+
+        public async Task connection() {
+            await Task.Run(() => {
+                byte[] buffer = new byte[4096];
+                clistream = client.GetStream();
+                int readsize;
+                Response resp;
+                Request req;
+                Console.WriteLine($"Connection alive with id: {this.id}. ");
+
+                while (!shutdown) {
+                    readsize = clistream.Read(buffer, 0, buffer.Length);
+                    Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer, 0, readsize));
+                    req = new Request("");
+                    if (!req.keepalive) {
+                        shutdown = true;
+                    }
+                    resp = new Response();
+                    clistream.Write(ASCIIEncoding.ASCII.GetBytes(resp.formulateResponse()), 0, ASCIIEncoding.ASCII.GetBytes(resp.formulateResponse()).Length);
+                    
+                }
+                clistream.Close();
+                client.Close();
+            });
+        }
+
+
         public Socket user_socket {
             get => default;
             set {
