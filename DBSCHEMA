@@ -1,0 +1,41 @@
+CREATE TABLE users(
+	userid INT PRIMARY KEY,
+	login varchar(64) UNIQUE,
+	password varchar(64),
+	nickname varchar(32),
+	email varchar(32),
+	about varchar(256)
+);
+
+CREATE TABLE scoreboard(
+	userid INT REFERENCES users(userid),
+	wins INT
+);
+
+CREATE TABLE multimedia_content(
+	mcid int primary key,
+	title varchar(32),
+	artist varchar(32),
+	album varchar(32),
+	rating float,
+	genre varchar(32),
+	lenght int,
+	filetype varchar(8),	
+	filesize int,
+	filepath varchar(64)
+);
+
+CREATE TABLE library(
+	userid INT REFERENCES users(userid),
+	mcid INT REFERENCES multimedia_content(mcid)
+);
+
+CREATE TABLE playlist(
+	mcid INT REFERENCES multimedia_content(mcid),
+	song_order int
+);
+
+CREATE TABLE playlist_history(
+	mcid INT REFERENCES multimedia_content(mcid),
+	play_date date
+);

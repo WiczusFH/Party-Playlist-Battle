@@ -17,8 +17,8 @@ namespace Party_Playlist_Battle
         public static void Main(string[] args) {
             //Server serv = new Server();
             //serv.run();
-            Connection_Listener listener = new Connection_Listener();
-            Console.WriteLine(listener.generate_token());
+            //Connection_Listener listener = new Connection_Listener();
+            //Console.WriteLine(listener.generate_token());
         }
     }
 }
