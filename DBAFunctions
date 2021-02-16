@@ -1,0 +1,11 @@
+register return bool
+validate return bool
+edit user data
+getstats
+getscoreboard
+getlibrary
+addToLibrary
+removeFromLibrary
+getPlaylist
+addToPlaylsit
+reorderPlaylist

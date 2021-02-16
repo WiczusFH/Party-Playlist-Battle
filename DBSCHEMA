@@ -4,7 +4,8 @@ CREATE TABLE users(
 	password varchar(64),
 	nickname varchar(32),
 	email varchar(32),
-	about varchar(256)
+	about varchar(256),
+	token varchar(32)
 );
 
 CREATE TABLE scoreboard(
