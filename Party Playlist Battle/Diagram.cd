@@ -3,7 +3,7 @@
   <Class Name="Party_Playlist_Battle.Connection_Listener">
     <Position X="5.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEIAAAAAQCAAAAhAAAACAABAIAAAAAAIEAAAAAAAAA=</HashCode>
+      <HashCode>ACEIAAAAAQCAAAAhAAAACAABAIAAAAAAIEAAAAAAAAA=</HashCode>
       <FileName>REST\ConnectionListener.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -21,21 +21,21 @@
     <Position X="10.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Library_Manager.cs</FileName>
+      <FileName>DB\Library_Manager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Party_Playlist_Battle.Login_Manager">
     <Position X="12.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Login_Manager.cs</FileName>
+      <FileName>DB\Login_Manager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Party_Playlist_Battle.Playlist">
-    <Position X="5.25" Y="6" Width="1.5" />
+    <Position X="5.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAMAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
-      <FileName>Playlist.cs</FileName>
+      <FileName>DB\Playlist.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Party_Playlist_Battle.Battle">
@@ -52,7 +52,7 @@
     <Position X="14.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAIAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Profile_Manager.cs</FileName>
+      <FileName>DB\Profile_Manager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Party_Playlist_Battle.Active_Connection">
@@ -74,7 +74,7 @@
     <Position X="16" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAAIAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Playlist_Manager.cs</FileName>
+      <FileName>DB\Playlist_Manager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Party_Playlist_Battle.Server">
@@ -95,11 +95,11 @@
       <FileName>Response_Tools.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Party_Playlist_Battle.MC_Tools">
+  <Class Name="Party_Playlist_Battle.DB_Tools">
     <Position X="14.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MC_Tools.cs</FileName>
+      <FileName>DB_Tools.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Party_Playlist_Battle.Response">
@@ -128,6 +128,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>REST\Status_Code.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Party_Playlist_Battle.Db_Tables">
+    <Position X="17.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAQAAAIAAAAEAA=</HashCode>
+      <FileName>db_tables.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />
