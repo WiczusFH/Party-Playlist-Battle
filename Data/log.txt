@@ -362,3 +362,828 @@
 	
 2021-02-20 19:13:26.311 CET [15844] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
 	
+2021-02-21 12:11:12.801 CET [15144] ERROR:  insufficient data left in message
+2021-02-21 12:13:25.152 CET [1332] ERROR:  insufficient data left in message
+2021-02-21 12:14:46.954 CET [2500] ERROR:  syntax error at or near "" at character 54
+2021-02-21 12:14:46.954 CET [2500] STATEMENT:  EXECUTE registration (1,'???`?_??l?r?c??Hzc?'?????9 ;
+	;
+	;
+	=
+	)
+	;
+2021-02-21 12:40:49.494 CET [19996] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:40:49.494 CET [19996] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 12:40:49.494 CET [19996] STATEMENT:  EXECUTE registration (3,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 12:41:33.850 CET [19996] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:41:46.624 CET [25264] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:41:46.624 CET [25264] DETAIL:  Key (login)=(3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB) already exists.
+2021-02-21 12:41:46.624 CET [25264] STATEMENT:  EXECUTE registration (3,'3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 12:44:08.646 CET [25264] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:44:15.984 CET [4928] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:44:15.984 CET [4928] DETAIL:  Key (login)=(3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB) already exists.
+2021-02-21 12:44:15.984 CET [4928] STATEMENT:  EXECUTE registration (3,'3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 12:48:21.070 CET [4928] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:48:28.784 CET [11524] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:48:28.784 CET [11524] DETAIL:  Key (login)=(3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB) already exists.
+2021-02-21 12:48:28.784 CET [11524] STATEMENT:  EXECUTE registration (3,'3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 12:48:30.313 CET [11524] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:50:17.034 CET [6428] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:50:17.034 CET [6428] DETAIL:  Key (login)=(3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB) already exists.
+2021-02-21 12:50:17.034 CET [6428] STATEMENT:  EXECUTE registration (3,'3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 12:50:39.579 CET [6428] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:50:48.098 CET [13088] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:50:48.098 CET [13088] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 12:50:48.098 CET [13088] STATEMENT:  EXECUTE registration (3,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 12:50:48.347 CET [13088] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:50:48.347 CET [13088] DETAIL:  Key (login)=(3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB) already exists.
+2021-02-21 12:50:48.347 CET [13088] STATEMENT:  EXECUTE registration (3,'3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 12:50:48.818 CET [13088] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:50:48.818 CET [13088] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 12:50:48.818 CET [13088] STATEMENT:  EXECUTE registration (4,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 12:50:49.061 CET [13088] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:50:49.061 CET [13088] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 12:50:49.061 CET [13088] STATEMENT:  EXECUTE registration (4,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 12:50:52.334 CET [21916] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:50:52.335 CET [13088] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:50:52.335 CET [4620] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:50:52.335 CET [4128] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:51:34.424 CET [2496] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:51:34.424 CET [2496] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 12:51:34.424 CET [2496] STATEMENT:  EXECUTE registration (4,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 12:51:34.663 CET [2496] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:51:34.663 CET [2496] DETAIL:  Key (login)=(3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB) already exists.
+2021-02-21 12:51:34.663 CET [2496] STATEMENT:  EXECUTE registration (4,'3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 12:51:34.894 CET [2496] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:51:34.894 CET [2496] DETAIL:  Key (login)=(8C6976E5B5410415BDE908BD4DEE15DFB167A9C873FC4BB8A81F6F2AB448A918) already exists.
+2021-02-21 12:51:34.894 CET [2496] STATEMENT:  EXECUTE registration (4,'8C6976E5B5410415BDE908BD4DEE15DFB167A9C873FC4BB8A81F6F2AB448A918','175490A3844460FE5B3D03B2879863A81F812C7566165E16673FA96F0B0C5BD8')
+2021-02-21 12:51:35.120 CET [2496] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:51:35.120 CET [2496] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 12:51:35.120 CET [2496] STATEMENT:  EXECUTE registration (4,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 12:51:35.361 CET [2496] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:51:35.361 CET [2496] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 12:51:35.361 CET [2496] STATEMENT:  EXECUTE registration (4,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 12:51:38.644 CET [2496] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:51:38.644 CET [24428] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:51:38.645 CET [18156] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:51:38.645 CET [24944] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:58:01.527 CET [25316] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:58:01.527 CET [25316] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 12:58:01.527 CET [25316] STATEMENT:  EXECUTE registration (4,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 12:58:01.762 CET [25316] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:58:01.762 CET [25316] DETAIL:  Key (login)=(3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB) already exists.
+2021-02-21 12:58:01.762 CET [25316] STATEMENT:  EXECUTE registration (4,'3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 12:58:02.003 CET [25316] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:58:02.003 CET [25316] DETAIL:  Key (login)=(8C6976E5B5410415BDE908BD4DEE15DFB167A9C873FC4BB8A81F6F2AB448A918) already exists.
+2021-02-21 12:58:02.003 CET [25316] STATEMENT:  EXECUTE registration (4,'8C6976E5B5410415BDE908BD4DEE15DFB167A9C873FC4BB8A81F6F2AB448A918','175490A3844460FE5B3D03B2879863A81F812C7566165E16673FA96F0B0C5BD8')
+2021-02-21 12:58:02.221 CET [25316] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:58:02.221 CET [25316] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 12:58:02.221 CET [25316] STATEMENT:  EXECUTE registration (4,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 12:58:02.448 CET [25316] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 12:58:02.448 CET [25316] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 12:58:02.448 CET [25316] STATEMENT:  EXECUTE registration (4,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 12:58:05.701 CET [25316] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:58:05.701 CET [14808] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:58:05.701 CET [16116] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 12:58:05.701 CET [16436] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:04:37.091 CET [4928] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:04:37.091 CET [4928] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 13:04:37.091 CET [4928] STATEMENT:  EXECUTE registration (4,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 13:04:37.327 CET [4928] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:04:37.327 CET [4928] DETAIL:  Key (login)=(3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB) already exists.
+2021-02-21 13:04:37.327 CET [4928] STATEMENT:  EXECUTE registration (4,'3FF9FB1BB2608D5FF3F66C841072F0638982487A63DD27D5B2DEB3C939001ABB','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 13:04:37.562 CET [4928] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:04:37.562 CET [4928] DETAIL:  Key (login)=(8C6976E5B5410415BDE908BD4DEE15DFB167A9C873FC4BB8A81F6F2AB448A918) already exists.
+2021-02-21 13:04:37.562 CET [4928] STATEMENT:  EXECUTE registration (4,'8C6976E5B5410415BDE908BD4DEE15DFB167A9C873FC4BB8A81F6F2AB448A918','175490A3844460FE5B3D03B2879863A81F812C7566165E16673FA96F0B0C5BD8')
+2021-02-21 13:04:37.789 CET [4928] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:04:37.789 CET [4928] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 13:04:37.789 CET [4928] STATEMENT:  EXECUTE registration (4,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 13:04:38.022 CET [4928] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:04:38.022 CET [4928] DETAIL:  Key (login)=(C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4) already exists.
+2021-02-21 13:04:38.022 CET [4928] STATEMENT:  EXECUTE registration (4,'C84B489886BC6425E6217396AE9DBFDCD47302B9207F76C1AA3B53CF743FE1D4','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 13:05:27.637 CET [4928] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:05:27.637 CET [15188] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:05:27.637 CET [18728] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:05:27.637 CET [8568] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:47:22.417 CET [2212] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:47:22.417 CET [2212] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 13:47:22.417 CET [2212] STATEMENT:  EXECUTE registration (7,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 13:47:22.658 CET [2212] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:47:22.658 CET [2212] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 13:47:22.658 CET [2212] STATEMENT:  EXECUTE registration (7,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 13:49:40.880 CET [2500] ERROR:  syntax error at or near "," at character 23
+2021-02-21 13:49:40.880 CET [2500] STATEMENT:  DELETE FROM scoreboard, library,users;
+2021-02-21 13:52:19.233 CET [2212] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:52:19.233 CET [10200] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:52:19.233 CET [25392] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:52:19.233 CET [9684] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:52:28.098 CET [16716] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:52:28.098 CET [16716] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 13:52:28.098 CET [16716] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 13:52:28.329 CET [16716] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:52:28.329 CET [16716] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 13:52:28.329 CET [16716] STATEMENT:  EXECUTE registration (3,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 13:55:27.044 CET [4620] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:55:27.045 CET [16716] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:55:27.045 CET [7144] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:55:27.045 CET [20820] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:57:47.343 CET [5948] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:57:47.343 CET [5948] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 13:57:47.343 CET [5948] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 13:57:47.588 CET [5948] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:57:47.588 CET [5948] DETAIL:  Key (login)=(altenhof) already exists.
+2021-02-21 13:57:47.588 CET [5948] STATEMENT:  EXECUTE registration (3,'altenhof','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 13:57:47.814 CET [5948] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:57:47.814 CET [5948] DETAIL:  Key (login)=(admin) already exists.
+2021-02-21 13:57:47.814 CET [5948] STATEMENT:  EXECUTE registration (3,'admin','175490A3844460FE5B3D03B2879863A81F812C7566165E16673FA96F0B0C5BD8')
+2021-02-21 13:57:48.039 CET [5948] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:57:48.039 CET [5948] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 13:57:48.039 CET [5948] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 13:57:48.283 CET [5948] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 13:57:48.283 CET [5948] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 13:57:48.283 CET [5948] STATEMENT:  EXECUTE registration (3,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 13:59:48.714 CET [5948] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:59:48.714 CET [9544] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:59:48.714 CET [24584] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 13:59:48.714 CET [12516] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:07:34.537 CET [13012] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:07:34.537 CET [7512] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:07:34.538 CET [3944] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:07:34.538 CET [14600] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:07:45.390 CET [17232] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:07:45.390 CET [15144] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:07:45.390 CET [23916] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:07.332 CET [11628] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:07.332 CET [22872] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:07.333 CET [15100] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:07.333 CET [10312] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:15.413 CET [9396] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 14:14:15.413 CET [9396] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 14:14:15.413 CET [9396] STATEMENT:  EXECUTE registration (0,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 14:14:15.646 CET [9396] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 14:14:15.646 CET [9396] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 14:14:15.646 CET [9396] STATEMENT:  EXECUTE registration (0,'altenhof','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 14:14:15.878 CET [9396] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 14:14:15.878 CET [9396] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 14:14:15.878 CET [9396] STATEMENT:  EXECUTE registration (0,'admin','175490A3844460FE5B3D03B2879863A81F812C7566165E16673FA96F0B0C5BD8')
+2021-02-21 14:14:16.106 CET [9396] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 14:14:16.106 CET [9396] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 14:14:16.106 CET [9396] STATEMENT:  EXECUTE registration (0,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 14:14:16.349 CET [9396] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 14:14:16.349 CET [9396] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 14:14:16.349 CET [9396] STATEMENT:  EXECUTE registration (0,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 14:14:21.867 CET [9396] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:21.868 CET [24868] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:21.868 CET [12456] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:21.868 CET [21188] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:21.868 CET [18916] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:21.868 CET [1184] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:21.868 CET [10032] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:21.868 CET [22360] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:21.868 CET [18660] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:21.868 CET [11928] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:14:21.868 CET [11656] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:23:08.044 CET [22852] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 14:23:08.044 CET [22852] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 14:23:08.044 CET [22852] STATEMENT:  EXECUTE registration (0,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 14:23:08.283 CET [22852] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 14:23:08.283 CET [22852] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 14:23:08.283 CET [22852] STATEMENT:  EXECUTE registration (0,'altenhof','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 14:23:08.506 CET [22852] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 14:23:08.506 CET [22852] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 14:23:08.506 CET [22852] STATEMENT:  EXECUTE registration (0,'admin','175490A3844460FE5B3D03B2879863A81F812C7566165E16673FA96F0B0C5BD8')
+2021-02-21 14:23:08.754 CET [22852] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 14:23:08.754 CET [22852] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 14:23:08.754 CET [22852] STATEMENT:  EXECUTE registration (0,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 14:23:08.985 CET [22852] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 14:23:08.985 CET [22852] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 14:23:08.985 CET [22852] STATEMENT:  EXECUTE registration (0,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 14:23:13.589 CET [20920] ERROR:  column "username" does not exist at character 8
+2021-02-21 14:23:13.589 CET [20920] STATEMENT:  SELECT username FROM users WHERE userid=0
+2021-02-21 14:23:15.060 CET [13236] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:23:15.060 CET [22852] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:23:15.061 CET [5928] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:23:15.061 CET [18848] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:23:15.061 CET [13424] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:23:15.062 CET [13960] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:23:15.062 CET [21668] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:23:15.062 CET [20920] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:23:15.062 CET [23540] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:23:15.062 CET [16352] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:24:15.144 CET [6508] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:24:15.144 CET [6508] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 14:24:15.144 CET [6508] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 14:24:15.382 CET [6508] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:24:15.382 CET [6508] DETAIL:  Key (login)=(altenhof) already exists.
+2021-02-21 14:24:15.382 CET [6508] STATEMENT:  EXECUTE registration (3,'altenhof','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 14:24:15.616 CET [6508] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:24:15.616 CET [6508] DETAIL:  Key (login)=(admin) already exists.
+2021-02-21 14:24:15.616 CET [6508] STATEMENT:  EXECUTE registration (3,'admin','175490A3844460FE5B3D03B2879863A81F812C7566165E16673FA96F0B0C5BD8')
+2021-02-21 14:24:15.853 CET [6508] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:24:15.853 CET [6508] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 14:24:15.853 CET [6508] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 14:24:16.084 CET [6508] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:24:16.084 CET [6508] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 14:24:16.084 CET [6508] STATEMENT:  EXECUTE registration (3,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 14:24:22.187 CET [6508] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:24:22.187 CET [15436] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:24:22.188 CET [17700] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:24:22.188 CET [7880] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:24:22.188 CET [17344] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:24:22.188 CET [12352] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:24:22.188 CET [21436] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:24:22.188 CET [15608] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:24:22.188 CET [9092] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:24:22.188 CET [21604] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:26:01.080 CET [20088] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:26:01.080 CET [20088] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 14:26:01.080 CET [20088] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 14:26:01.310 CET [20088] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:26:01.310 CET [20088] DETAIL:  Key (login)=(altenhof) already exists.
+2021-02-21 14:26:01.310 CET [20088] STATEMENT:  EXECUTE registration (3,'altenhof','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 14:26:01.549 CET [20088] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:26:01.549 CET [20088] DETAIL:  Key (login)=(admin) already exists.
+2021-02-21 14:26:01.549 CET [20088] STATEMENT:  EXECUTE registration (3,'admin','175490A3844460FE5B3D03B2879863A81F812C7566165E16673FA96F0B0C5BD8')
+2021-02-21 14:26:01.772 CET [20088] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:26:01.772 CET [20088] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 14:26:01.772 CET [20088] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 14:26:02.017 CET [20088] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:26:02.017 CET [20088] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 14:26:02.017 CET [20088] STATEMENT:  EXECUTE registration (3,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 14:26:07.887 CET [4120] ERROR:  column "album" specified more than once at character 101
+2021-02-21 14:26:07.887 CET [4120] STATEMENT:  PREPARE addMmc AS INSERT INTO multimedia_content(mcid, name, filepath, rating, genre, title, album, album) VALUES($1,$2,$3,$4,$5,$6,$7,$8)
+2021-02-21 14:26:10.831 CET [23868] ERROR:  insert or update on table "playlist" violates foreign key constraint "playlist_mcid_fkey"
+2021-02-21 14:26:10.831 CET [23868] DETAIL:  Key (mcid)=(-1) is not present in table "multimedia_content".
+2021-02-21 14:26:10.831 CET [23868] STATEMENT:  INSERT INTO playlist VALUES (-1,4)
+2021-02-21 14:26:11.058 CET [23868] ERROR:  insert or update on table "playlist" violates foreign key constraint "playlist_mcid_fkey"
+2021-02-21 14:26:11.058 CET [23868] DETAIL:  Key (mcid)=(-1) is not present in table "multimedia_content".
+2021-02-21 14:26:11.058 CET [23868] STATEMENT:  INSERT INTO playlist VALUES (-1,4)
+2021-02-21 14:26:11.534 CET [23868] ERROR:  insert or update on table "playlist" violates foreign key constraint "playlist_mcid_fkey"
+2021-02-21 14:26:11.534 CET [23868] DETAIL:  Key (mcid)=(-1) is not present in table "multimedia_content".
+2021-02-21 14:26:11.534 CET [23868] STATEMENT:  INSERT INTO playlist VALUES (-1,5)
+2021-02-21 14:30:05.440 CET [8472] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.440 CET [8128] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.440 CET [19260] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.440 CET [20088] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.441 CET [22284] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.442 CET [5932] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.442 CET [5244] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.442 CET [18716] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.443 CET [22020] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.443 CET [21332] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.443 CET [4120] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.443 CET [22164] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.443 CET [19184] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.443 CET [21324] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.443 CET [23868] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.443 CET [5620] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.443 CET [24412] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:05.443 CET [8456] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:51.467 CET [12544] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:51.468 CET [4472] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:51.468 CET [19236] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:30:51.468 CET [23116] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:31:44.507 CET [19548] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:31:44.507 CET [19548] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 14:31:44.507 CET [19548] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 14:31:44.745 CET [19548] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:31:44.745 CET [19548] DETAIL:  Key (login)=(altenhof) already exists.
+2021-02-21 14:31:44.745 CET [19548] STATEMENT:  EXECUTE registration (3,'altenhof','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 14:31:44.986 CET [19548] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:31:44.986 CET [19548] DETAIL:  Key (login)=(admin) already exists.
+2021-02-21 14:31:44.986 CET [19548] STATEMENT:  EXECUTE registration (3,'admin','175490A3844460FE5B3D03B2879863A81F812C7566165E16673FA96F0B0C5BD8')
+2021-02-21 14:31:45.216 CET [19548] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:31:45.216 CET [19548] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 14:31:45.216 CET [19548] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 14:31:45.455 CET [19548] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:31:45.455 CET [19548] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 14:31:45.455 CET [19548] STATEMENT:  EXECUTE registration (3,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 14:32:10.133 CET [14588] ERROR:  column "album" specified more than once at character 101
+2021-02-21 14:32:10.133 CET [14588] STATEMENT:  PREPARE addMmc AS INSERT INTO multimedia_content(mcid, name, filepath, rating, genre, title, album, album) VALUES($1,$2,$3,$4,$5,$6,$7,$8)
+2021-02-21 14:32:13.097 CET [20416] ERROR:  insert or update on table "playlist" violates foreign key constraint "playlist_mcid_fkey"
+2021-02-21 14:32:13.097 CET [20416] DETAIL:  Key (mcid)=(-1) is not present in table "multimedia_content".
+2021-02-21 14:32:13.097 CET [20416] STATEMENT:  INSERT INTO playlist VALUES (-1,7)
+2021-02-21 14:32:13.324 CET [20416] ERROR:  insert or update on table "playlist" violates foreign key constraint "playlist_mcid_fkey"
+2021-02-21 14:32:13.324 CET [20416] DETAIL:  Key (mcid)=(-1) is not present in table "multimedia_content".
+2021-02-21 14:32:13.324 CET [20416] STATEMENT:  INSERT INTO playlist VALUES (-1,7)
+2021-02-21 14:32:13.802 CET [20416] ERROR:  insert or update on table "playlist" violates foreign key constraint "playlist_mcid_fkey"
+2021-02-21 14:32:13.802 CET [20416] DETAIL:  Key (mcid)=(-1) is not present in table "multimedia_content".
+2021-02-21 14:32:13.802 CET [20416] STATEMENT:  INSERT INTO playlist VALUES (-1,8)
+2021-02-21 14:34:36.176 CET [2500] ERROR:  relation "lib" does not exist at character 15
+2021-02-21 14:34:36.176 CET [2500] STATEMENT:  select * from lib
+	;
+2021-02-21 14:37:16.347 CET [18700] ERROR:  column "album" specified more than once at character 101
+2021-02-21 14:37:16.347 CET [18700] STATEMENT:  PREPARE addMmc AS INSERT INTO multimedia_content(mcid, name, filepath, rating, genre, title, album, album) VALUES($1,$2,$3,$4,$5,$6,$7,$8)
+2021-02-21 14:41:27.342 CET [19548] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.344 CET [19636] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.344 CET [18144] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.344 CET [20820] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.344 CET [9680] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.345 CET [19736] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.345 CET [21436] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.345 CET [17864] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.345 CET [14588] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.345 CET [7812] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.345 CET [6588] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.346 CET [18700] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.346 CET [10756] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.346 CET [17324] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.346 CET [10664] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.346 CET [8036] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.346 CET [20416] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.347 CET [13160] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.347 CET [24228] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.347 CET [18916] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:27.348 CET [23600] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:41:40.298 CET [1300] ERROR:  value too long for type character varying(8)
+2021-02-21 14:41:40.298 CET [1300] STATEMENT:  EXECUTE addMmc (2,'Good_Mood_Song','https://youtu.be/H9cmPE88a_0', replace('4',',','.')::float, 'Pop', 'Duck Tales Intro', 'Theme Songs', 'Theme Songs')
+2021-02-21 14:42:47.907 CET [1300] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:42:47.907 CET [16800] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:42:54.004 CET [24600] ERROR:  value too long for type character varying(8)
+2021-02-21 14:42:54.004 CET [24600] STATEMENT:  EXECUTE addMmc (2,'Good_Mood_Song','https://youtu.be/H9cmPE88a_0', replace('4',',','.')::float, 'Pop', 'Duck Tales Intro', 'Theme Songs', 'Theme Songs')
+2021-02-21 14:44:25.482 CET [16064] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:44:25.482 CET [24600] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:49:05.795 CET [24144] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:49:05.795 CET [12076] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:49:31.534 CET [13604] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:49:31.534 CET [13604] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 14:49:31.534 CET [13604] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 14:49:31.773 CET [13604] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 14:49:31.773 CET [13604] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 14:49:31.773 CET [13604] STATEMENT:  EXECUTE registration (3,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 14:49:41.396 CET [22728] ERROR:  insert or update on table "playlist" violates foreign key constraint "playlist_mcid_fkey"
+2021-02-21 14:49:41.396 CET [22728] DETAIL:  Key (mcid)=(-1) is not present in table "multimedia_content".
+2021-02-21 14:49:41.396 CET [22728] STATEMENT:  INSERT INTO playlist VALUES (-1,7)
+2021-02-21 14:52:22.339 CET [2500] ERROR:  update or delete on table "multimedia_content" violates foreign key constraint "library_mcid_fkey" on table "library"
+2021-02-21 14:52:22.339 CET [2500] DETAIL:  Key (mcid)=(0) is still referenced from table "library".
+2021-02-21 14:52:22.339 CET [2500] STATEMENT:  DELETE FROM multimedia_content;
+2021-02-21 14:56:54.039 CET [13604] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.039 CET [22104] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.040 CET [10892] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.040 CET [10680] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.041 CET [19512] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.041 CET [7868] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.041 CET [20236] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.041 CET [21720] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.041 CET [4996] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.041 CET [11756] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.041 CET [16248] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.042 CET [15972] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.042 CET [6564] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.042 CET [22728] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.042 CET [18320] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.042 CET [21124] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.042 CET [4356] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:56:54.042 CET [8092] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:59:44.866 CET [8888] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 14:59:58.241 CET [24100] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:25.873 CET [16076] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 17:33:25.873 CET [16076] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 17:33:25.873 CET [16076] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 17:33:26.127 CET [16076] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 17:33:26.127 CET [16076] DETAIL:  Key (login)=(altenhof) already exists.
+2021-02-21 17:33:26.127 CET [16076] STATEMENT:  EXECUTE registration (3,'altenhof','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 17:33:26.350 CET [16076] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 17:33:26.350 CET [16076] DETAIL:  Key (login)=(admin) already exists.
+2021-02-21 17:33:26.350 CET [16076] STATEMENT:  EXECUTE registration (3,'admin','175490A3844460FE5B3D03B2879863A81F812C7566165E16673FA96F0B0C5BD8')
+2021-02-21 17:33:26.582 CET [16076] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 17:33:26.582 CET [16076] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 17:33:26.582 CET [16076] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 17:33:26.815 CET [16076] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 17:33:26.815 CET [16076] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 17:33:26.815 CET [16076] STATEMENT:  EXECUTE registration (3,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 17:33:38.603 CET [16076] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.604 CET [18844] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.605 CET [23780] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.605 CET [5904] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.605 CET [12100] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.606 CET [18260] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.606 CET [10568] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.606 CET [14864] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.606 CET [20832] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.606 CET [23516] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.606 CET [9396] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.606 CET [16476] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.606 CET [24256] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.606 CET [17224] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.606 CET [14532] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.607 CET [14020] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.607 CET [18680] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:33:38.606 CET [10512] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:40:39.627 CET [4552] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:42:57.362 CET [10044] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:43:25.658 CET [12120] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:48:09.160 CET [24752] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 17:48:34.424 CET [18048] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 18:29:08.675 CET [21248] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 18:29:08.676 CET [3080] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 18:29:35.871 CET [20552] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 18:33:16.198 CET [6360] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 18:39:01.269 CET [16532] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:12:45.629 CET [23124] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:13:32.615 CET [17728] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:13:45.775 CET [17520] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 20:13:45.775 CET [17520] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 20:13:45.775 CET [17520] STATEMENT:  EXECUTE registration (0,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 20:13:46.006 CET [17520] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 20:13:46.006 CET [17520] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 20:13:46.006 CET [17520] STATEMENT:  EXECUTE registration (0,'altenhof','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 20:13:46.236 CET [17520] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 20:13:46.236 CET [17520] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 20:13:46.236 CET [17520] STATEMENT:  EXECUTE registration (0,'admin','175490A3844460FE5B3D03B2879863A81F812C7566165E16673FA96F0B0C5BD8')
+2021-02-21 20:13:46.468 CET [17520] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 20:13:46.468 CET [17520] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 20:13:46.468 CET [17520] STATEMENT:  EXECUTE registration (0,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 20:13:46.687 CET [17520] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-21 20:13:46.687 CET [17520] DETAIL:  Key (userid)=(0) already exists.
+2021-02-21 20:13:46.687 CET [17520] STATEMENT:  EXECUTE registration (0,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 20:15:28.218 CET [10360] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.219 CET [17520] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.220 CET [5004] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.220 CET [18468] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.220 CET [16968] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.220 CET [21060] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.221 CET [25396] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.221 CET [21440] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.221 CET [24372] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.221 CET [16772] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.221 CET [13700] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.221 CET [22832] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.221 CET [18744] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.221 CET [13220] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.221 CET [3128] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.221 CET [8120] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.222 CET [8252] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.222 CET [15500] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.222 CET [9420] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:15:28.222 CET [2696] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:16:40.295 CET [20472] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 20:16:40.295 CET [20472] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 20:16:40.295 CET [20472] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 20:16:40.520 CET [20472] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 20:16:40.520 CET [20472] DETAIL:  Key (login)=(altenhof) already exists.
+2021-02-21 20:16:40.520 CET [20472] STATEMENT:  EXECUTE registration (3,'altenhof','24D9C7B19834AA278CE9609A00D156F61BD83184C2634D1C2B1D6AAA9C235B3A')
+2021-02-21 20:16:40.750 CET [20472] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 20:16:40.750 CET [20472] DETAIL:  Key (login)=(admin) already exists.
+2021-02-21 20:16:40.750 CET [20472] STATEMENT:  EXECUTE registration (3,'admin','175490A3844460FE5B3D03B2879863A81F812C7566165E16673FA96F0B0C5BD8')
+2021-02-21 20:16:40.971 CET [20472] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 20:16:40.971 CET [20472] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 20:16:40.971 CET [20472] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 20:16:41.212 CET [20472] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 20:16:41.212 CET [20472] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 20:16:41.212 CET [20472] STATEMENT:  EXECUTE registration (3,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 20:22:54.988 CET [15552] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.988 CET [20472] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.989 CET [9644] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.990 CET [21060] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.990 CET [16136] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.990 CET [23624] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.990 CET [21164] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.990 CET [18572] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.990 CET [16280] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.990 CET [8120] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.990 CET [23216] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.990 CET [14776] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.991 CET [17320] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.991 CET [8852] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.991 CET [10484] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:22:54.991 CET [2088] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:24:47.904 CET [25276] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:24:47.905 CET [21624] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:25:45.688 CET [5616] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:25:45.688 CET [2552] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:26:52.407 CET [13812] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:26:52.407 CET [8512] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:28:05.573 CET [14524] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:28:05.574 CET [7996] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:28:21.336 CET [8748] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:28:21.336 CET [12276] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:29:21.219 CET [11388] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:29:21.219 CET [17524] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:31:12.597 CET [16244] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:31:12.597 CET [24040] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:31:23.972 CET [24596] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 20:31:23.972 CET [24596] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 20:31:23.972 CET [24596] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 20:31:24.221 CET [24596] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 20:31:24.221 CET [24596] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 20:31:24.221 CET [24596] STATEMENT:  EXECUTE registration (3,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 20:34:11.868 CET [18624] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.868 CET [24596] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.869 CET [24856] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.871 CET [15268] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.871 CET [1296] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.871 CET [19944] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.871 CET [2280] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.871 CET [13528] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.871 CET [2124] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.871 CET [1556] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.872 CET [24500] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.872 CET [20904] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.872 CET [23720] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.872 CET [23356] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.872 CET [10212] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.872 CET [14656] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.872 CET [4988] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.872 CET [19784] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:34:11.872 CET [18404] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:35:54.890 CET [16416] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 20:35:54.890 CET [16416] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 20:35:54.890 CET [16416] STATEMENT:  EXECUTE registration (3,'kienboec','BD3DAE5FB91F88A4F0978222DFD58F59A124257CB081486387CBAE9DF11FB879')
+2021-02-21 20:35:55.136 CET [16416] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-21 20:35:55.136 CET [16416] DETAIL:  Key (login)=(kienboec) already exists.
+2021-02-21 20:35:55.136 CET [16416] STATEMENT:  EXECUTE registration (3,'kienboec','9D6F965AC832E40A5DF6C06AFE983E3B449C07B843FF51CE76204DE05C690D11')
+2021-02-21 20:51:31.890 CET [16416] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.891 CET [16332] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.891 CET [2440] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.892 CET [21272] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.893 CET [12924] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.893 CET [20308] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.893 CET [1244] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.893 CET [14240] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.893 CET [14732] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.893 CET [8188] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.893 CET [17600] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.894 CET [14924] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.894 CET [10368] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.894 CET [19448] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.894 CET [25464] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.894 CET [10580] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.894 CET [19844] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:51:31.894 CET [21200] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:52:37.391 CET [24872] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:52:37.392 CET [13088] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:52:37.392 CET [23292] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:52:37.392 CET [7020] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 20:57:22.212 CET [11120] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 21:00:06.362 CET [19248] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 21:00:06.362 CET [13804] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-21 21:03:02.328 CET [19244] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

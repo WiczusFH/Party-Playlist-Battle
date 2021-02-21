@@ -1,0 +1,7 @@
+DELETE FROM playlist;
+DELETE FROM library;
+DELETE FROM scoreboard;
+DELETE FROM multimedia_content;
+DELETE FROM users;
+
+

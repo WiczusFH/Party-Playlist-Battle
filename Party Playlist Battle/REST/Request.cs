@@ -58,7 +58,7 @@ namespace Party_Playlist_Battle
             string[] lines = message.Split("\r\n");
             foreach(string line in lines)
             {
-                if (line.ToLower().Contains("authorisation:"))
+                if (line.ToLower().Contains("authorization:"))
                 {
                     token = line.Substring(14).Trim();
                     break;

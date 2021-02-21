@@ -15,30 +15,35 @@ namespace Party_Playlist_Battle
         public int id { get; }
         public TcpClient client;
         public Stream clistream;
-        
+        Battle battle;
 
-        public Active_Connection(TcpClient client, int id) {
+        public Active_Connection(TcpClient client, int id,Battle battle) {
             this.id = id;
+            this.battle = battle;
             this.client = client;
-            Task conn = connection();
+            Task conn = connectionAsync();
+            //connection();
         }
 
-        public async Task connection() {
+        public async Task connectionAsync() {
             await Task.Run(() => {
                 byte[] buffer = new byte[4096];
                 clistream = client.GetStream();
                 int readsize;
                 Request req;
+                Response resp;
                 Console.WriteLine($"Connection alive with id: {this.id}. ");
 
                 while (!shutdown) {
                     readsize = clistream.Read(buffer, 0, buffer.Length);
-                    Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer, 0, readsize));
-                    req = new Request("");
+                    req = new Request(ASCIIEncoding.ASCII.GetString(buffer, 0, readsize));
                     if (!req.keepalive) {
                         shutdown = true;
                     }
-                    clistream.Write(ASCIIEncoding.ASCII.GetBytes(Response.formulateResponse(req,Status_Code.OK)), 0, ASCIIEncoding.ASCII.GetBytes(Response.formulateResponse(req,Status_Code.OK)).Length);
+                    Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer, 0, readsize));
+                    resp = REST_Tools.Handler(req,battle);
+                    Console.WriteLine(resp.formulateResponse());
+                    clistream.Write(ASCIIEncoding.ASCII.GetBytes(resp.formulateResponse(), 0, ASCIIEncoding.ASCII.GetBytes(resp.formulateResponse()).Length));
                     
                 }
                 clistream.Close();
@@ -46,24 +51,41 @@ namespace Party_Playlist_Battle
             });
         }
 
+        public void connection()
+        {
+            
+            byte[] buffer = new byte[4096];
+            clistream = client.GetStream();
+            int readsize;
+            Request req;
+            Response resp;
+            Console.WriteLine($"Connection alive with id: {this.id}. ");
+
+            while (!shutdown)
+            {
+                readsize = clistream.Read(buffer, 0, buffer.Length);
+                req = new Request(ASCIIEncoding.ASCII.GetString(buffer, 0, readsize));
+                if (!req.keepalive)
+                {
+                    shutdown = true;
+                }
+                Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer, 0, readsize));
+                resp = REST_Tools.Handler(req,battle);
+                Console.WriteLine(resp.formulateResponse());
+                clistream.Write(ASCIIEncoding.ASCII.GetBytes(resp.formulateResponse(), 0, ASCIIEncoding.ASCII.GetBytes(resp.formulateResponse()).Length));
+
+            }
+            clistream.Close();
+            client.Close();
+            
+        }
+
 
         public Socket user_socket {
             get => default;
             set {
             }
-        }
-
-        public int token {
-            get => default;
-            set {
-            }
-        }
-
-        public Active_User Active_User {
-            get => default;
-            set {
-            }
-        }
+        }     
 
         public Battle Battle {
             get => default;

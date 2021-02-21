@@ -14,20 +14,30 @@ namespace Party_Playlist_Battle
 {
     public class Connection_Listener
     {
+        Battle battle = new Battle();
         List<Active_Connection> connections = new List<Active_Connection>();
-        TcpListener listener = new TcpListener(IPAddress.Loopback, 6000);
+        TcpListener listener = new TcpListener(IPAddress.Loopback, 10001);
 
-        public Connection_Listener() {
-        }
-        public async void start() {
+        public async void startAsync() {
             await Task.Run(() => {
                 listener.Start();
                 for (int i = 0; i < 25; i++) {
                     Console.WriteLine("Looking for cliens. ");
-                    connections.Add(new Active_Connection(listener.AcceptTcpClient(), i));
+                    connections.Add(new Active_Connection(listener.AcceptTcpClient(), i,battle));
                 }
             });
         }
+
+        public void start()
+        {
+            listener.Start();
+            for (int i = 0; i < 2500; i++)
+            {
+                Console.WriteLine("Looking for cliens. ");
+                connections.Add(new Active_Connection(listener.AcceptTcpClient(), i, battle)); ;
+            }
+        }
+
         public void list_active_connections() {
             foreach (Active_Connection conn in connections) {
                 Console.WriteLine(conn.id);
@@ -61,24 +71,5 @@ namespace Party_Playlist_Battle
             }
         }
 
-        /// <summary>
-        /// creates instance of active_connection class
-        /// </summary>
-        public int create_active_connection() {
-            throw new System.NotImplementedException();
-        }
-
-        public void start_listening() {
-            throw new System.NotImplementedException();
-        }
-
-        public void terminate_active_connection() {
-            throw new System.NotImplementedException();
-        }
-
-        public string generate_token(Request req) {
-            
-            return null;
-        }
     }
 }

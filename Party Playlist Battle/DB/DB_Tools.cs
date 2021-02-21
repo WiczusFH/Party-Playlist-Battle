@@ -13,8 +13,7 @@ namespace Party_Playlist_Battle
         public static bool db_register(string username, string password)
         {
             using (SHA256 hasher = SHA256.Create()) {
-                username = Encoding.ASCII.GetString(hasher.ComputeHash(Encoding.ASCII.GetBytes(username)));
-                password = Encoding.ASCII.GetString(hasher.ComputeHash(Encoding.ASCII.GetBytes(password)));
+                password = BitConverter.ToString(hasher.ComputeHash(Encoding.ASCII.GetBytes(password))).Replace("-", string.Empty);
             }
             var conn = new NpgsqlConnection(connstring);
             conn.Open();
@@ -43,6 +42,7 @@ namespace Party_Playlist_Battle
                 return false;
             }
             reader.Close();
+            Console.WriteLine($"EXECUTE registration ({val},'{username}','{password}');");
             try
             {
                 command = new NpgsqlCommand($"EXECUTE registration ({val},'{username}','{password}');", conn);
@@ -68,6 +68,7 @@ namespace Party_Playlist_Battle
                 conn.Close();
                 return false;
             }
+            Console.WriteLine("aye");
             reader.Close();
             conn.Close();
             return true;
@@ -76,8 +77,7 @@ namespace Party_Playlist_Battle
         public static bool db_login(string username, string password) {
             using (SHA256 hasher = SHA256.Create())
             {
-                username = Encoding.ASCII.GetString(hasher.ComputeHash(Encoding.ASCII.GetBytes(username)));
-                password = Encoding.ASCII.GetString(hasher.ComputeHash(Encoding.ASCII.GetBytes(password)));
+                password = BitConverter.ToString(hasher.ComputeHash(Encoding.ASCII.GetBytes(password))).Replace("-", string.Empty);
             }
             var conn = new NpgsqlConnection(connstring);
             conn.Open();
@@ -101,7 +101,7 @@ namespace Party_Playlist_Battle
         }
 
         public static List<string> userData(int userid) {
-            List<string> usrdata = new List<string>();
+            List<string> usrdata = new List<string>(); ;
             var conn = new NpgsqlConnection(connstring);
             conn.Open();
             NpgsqlCommand command;
@@ -115,9 +115,12 @@ namespace Party_Playlist_Battle
                 Console.WriteLine(e);
                 return null;
             }
-            reader.Read();
-            for (int i = 3; i < reader.FieldCount; i++) {
-                usrdata.Add(reader[i].ToString());
+            if (reader.Read())
+            {
+                for (int i = 3; i < reader.FieldCount; i++)
+                {
+                    usrdata.Add(reader.GetName(i) + "\r\n" + reader[i].ToString());
+                }
             }
             return usrdata;
         }
@@ -244,18 +247,18 @@ namespace Party_Playlist_Battle
             return true;
         }
 
-        public static List<int[]> getScoreboard() {
-            List<int[]> scoreboard = new List<int[]>();
+        public static List<Object[]> getScoreboard() {
+            List<Object[]> scoreboard = new List<Object[]>();
 
             var conn = new NpgsqlConnection(connstring);
             conn.Open();
             NpgsqlCommand command;
             NpgsqlDataReader reader;
-            command = new NpgsqlCommand($"SELECT * FROM scoreboard ORDER BY wins ASC;", conn);
+            command = new NpgsqlCommand($"SELECT userid,wins FROM scoreboard ORDER BY wins ASC;", conn);
             reader = command.ExecuteReader();
             while (reader.Read())
             {
-                scoreboard.Add(new int[2] { Int32.Parse(reader[0].ToString()), Int32.Parse(reader[1].ToString()) });
+                scoreboard.Add(new Object[2] { DB_Tools.userIdToName(Int32.Parse(reader[0].ToString())), Int32.Parse(reader[1].ToString()) });
             }
             return scoreboard;
         }
@@ -328,7 +331,7 @@ namespace Party_Playlist_Battle
             if (title!=null) { prepare += ", title"; };
             if (album!=null) { prepare += ", album"; };
             if (lenght!= -1) { prepare += ", lenght"; };
-            if (filetype!= null) { prepare += ", album"; };
+            if (filetype!= null) { prepare += ", filetype"; };
             prepare += ") VALUES(";
             int count = 3;
             prepare += "$1,$2,$3";
@@ -346,9 +349,10 @@ namespace Party_Playlist_Battle
             if (title != null) { execute += $", '{title}'"; };
             if (album != null) { execute += $", '{album}'"; };
             if (lenght != -1) { execute += $", {lenght}"; };
-            if (filetype != null) { execute += $", '{album}'"; };
+            if (filetype != null) { execute += $", '{filetype}'"; };
             execute += ");";
-
+            Console.WriteLine(prepare);
+            Console.WriteLine(execute);
             try
             {
                 command = new NpgsqlCommand(prepare, conn);
@@ -538,10 +542,6 @@ namespace Party_Playlist_Battle
         }
         public static int nameToUserid(string name)
         {
-            using (SHA256 hasher = SHA256.Create())
-            {
-                name = Encoding.ASCII.GetString(hasher.ComputeHash(Encoding.ASCII.GetBytes(name)));
-            }
             var conn = new NpgsqlConnection(connstring);
             conn.Open();
             NpgsqlCommand command;
@@ -564,6 +564,21 @@ namespace Party_Playlist_Battle
             return -1;
         }
 
-
+        public static string userIdToName(int userid) {
+            var conn = new NpgsqlConnection(connstring);
+            conn.Open();
+            NpgsqlCommand command;
+            NpgsqlDataReader reader;
+            command = new NpgsqlCommand($"SELECT login FROM users WHERE userid={userid};", conn);
+            reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                string name = reader[0].ToString();
+                conn.Close();
+                return name;
+            }
+            conn.Close();
+            return null;
+        }
     }
 }
