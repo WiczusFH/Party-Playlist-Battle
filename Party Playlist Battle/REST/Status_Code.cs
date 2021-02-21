@@ -6,5 +6,6 @@ namespace Party_Playlist_Battle
 {
     public enum Status_Code
     {
+        OK,NOK
     }
 }

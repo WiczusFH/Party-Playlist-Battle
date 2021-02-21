@@ -98,8 +98,8 @@
   <Class Name="Party_Playlist_Battle.DB_Tools">
     <Position X="14.25" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DB_Tools.cs</FileName>
+      <HashCode>IAUgAMQIAEAQQAAAACAAAAAAAAAACAAIAAAAAAAAAAA=</HashCode>
+      <FileName>DB\DB_Tools.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Party_Playlist_Battle.Response">
@@ -107,6 +107,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>REST\Response.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Party_Playlist_Battle.REST_Tools">
+    <Position X="7.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>REST_Tools.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="Party_Playlist_Battle.user_battle_info">

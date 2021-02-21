@@ -22,7 +22,7 @@ namespace Party_Playlist_Battle
         public async void start() {
             await Task.Run(() => {
                 listener.Start();
-                for (int i = 0; i < 5; i++) {
+                for (int i = 0; i < 25; i++) {
                     Console.WriteLine("Looking for cliens. ");
                     connections.Add(new Active_Connection(listener.AcceptTcpClient(), i));
                 }
@@ -76,27 +76,9 @@ namespace Party_Playlist_Battle
             throw new System.NotImplementedException();
         }
 
-        public string generate_token() {
-            Random rand=new Random();
-            int number = rand.Next(0,65535);
-            string result = ComputeSha256Hash(number.ToString());
-            return result;
-        }
-
-        //Source: https://www.c-sharpcorner.com/article/compute-sha256-hash-in-c-sharp/
-        static string ComputeSha256Hash(string rawData) {
-            // Create a SHA256   
-            using (SHA256 sha256Hash = SHA256.Create()) {
-                // ComputeHash - returns byte array  
-                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
-
-                // Convert byte array to a string   
-                StringBuilder builder = new StringBuilder();
-                for (int i = 0; i < bytes.Length; i++) {
-                    builder.Append(bytes[i].ToString("x2"));
-                }
-                return builder.ToString();
-            }
+        public string generate_token(Request req) {
+            
+            return null;
         }
     }
 }

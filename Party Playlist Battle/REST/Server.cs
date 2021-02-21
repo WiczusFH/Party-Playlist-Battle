@@ -3,20 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Party_Playlist_Battle
-{
+ {
+    //Server Starts a connections listener 
     public class Server
     {
         public Connection_Listener listener;
 
-        public Playlist Playlist {
-            get => default;
-            set {
-            }
-        }
-
-        /// <summary>
-        /// start playlist and connectionlistener, parse listener pointer for connections
-        /// </summary>
         public void run() {
             listener = new Connection_Listener();
             listener.start();

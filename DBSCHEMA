@@ -5,10 +5,16 @@ CREATE TABLE users(
 	nickname varchar(32),
 	email varchar(32),
 	about varchar(256),
-	token varchar(32)
+	token varchar(32),
+	image varchar(32)
 );
 
 CREATE TABLE scoreboard(
+	userid INT REFERENCES users(userid),
+	wins INT
+);
+
+CREATE TABLE stats(
 	userid INT REFERENCES users(userid),
 	wins INT
 );

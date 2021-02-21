@@ -28,7 +28,6 @@ namespace Party_Playlist_Battle
                 byte[] buffer = new byte[4096];
                 clistream = client.GetStream();
                 int readsize;
-                Response resp;
                 Request req;
                 Console.WriteLine($"Connection alive with id: {this.id}. ");
 
@@ -39,8 +38,7 @@ namespace Party_Playlist_Battle
                     if (!req.keepalive) {
                         shutdown = true;
                     }
-                    resp = new Response();
-                    clistream.Write(ASCIIEncoding.ASCII.GetBytes(resp.formulateResponse()), 0, ASCIIEncoding.ASCII.GetBytes(resp.formulateResponse()).Length);
+                    clistream.Write(ASCIIEncoding.ASCII.GetBytes(Response.formulateResponse(req,Status_Code.OK)), 0, ASCIIEncoding.ASCII.GetBytes(Response.formulateResponse(req,Status_Code.OK)).Length);
                     
                 }
                 clistream.Close();
@@ -62,30 +60,6 @@ namespace Party_Playlist_Battle
         }
 
         public Active_User Active_User {
-            get => default;
-            set {
-            }
-        }
-
-        public Library_Manager Library_Manager {
-            get => default;
-            set {
-            }
-        }
-
-        public Login_Manager Login_Manager {
-            get => default;
-            set {
-            }
-        }
-
-        public Profile_Manager Profile_Manager {
-            get => default;
-            set {
-            }
-        }
-
-        public Playlist_Manager Playlist_Manager {
             get => default;
             set {
             }

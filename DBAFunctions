@@ -1,11 +1,18 @@
-register return bool
-validate return bool
-edit user data
-getstats
-getscoreboard
-getlibrary
-addToLibrary
-removeFromLibrary
-getPlaylist
-addToPlaylsit
-reorderPlaylist
+register return bool v
+validate return bool v
+edit user data v
+
+updatestats v
+getstats v
+
+getscoreboard v
+
+getlibrary v -- needs correction
+addToLibrary v -- needs correction
+removeFromLibrary v
+
+getPlaylist v
+
+addToPlaylsit v
+
+reorderPlaylist v

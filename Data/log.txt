@@ -1,0 +1,364 @@
+2021-02-18 23:56:51.165 CET [4408] LOG:  listening on IPv6 address "::1", port 5432
+2021-02-18 23:56:51.166 CET [4408] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-02-18 23:56:51.215 CET [18412] LOG:  database system was shut down at 2021-02-18 23:56:47 CET
+2021-02-18 23:56:51.263 CET [4408] LOG:  database system is ready to accept connections
+2021-02-18 23:58:18.712 CET [12196] ERROR:  relation "test" does not exist at character 13
+2021-02-18 23:58:18.712 CET [12196] STATEMENT:  INSERT INTO test VALUES(456,5)
+2021-02-18 23:58:49.986 CET [18200] ERROR:  relation "test" does not exist at character 13
+2021-02-18 23:58:49.986 CET [18200] STATEMENT:  INSERT INTO test VALUES(456,5)
+2021-02-18 23:59:21.844 CET [18380] ERROR:  relation "test" does not exist at character 13
+2021-02-18 23:59:21.844 CET [18380] STATEMENT:  INSERT INTO test VALUES(456,5)
+2021-02-18 23:59:34.595 CET [19180] ERROR:  relation "test" does not exist at character 13
+2021-02-18 23:59:34.595 CET [19180] STATEMENT:  INSERT INTO test VALUES(456,5)
+2021-02-19 00:00:05.576 CET [22176] ERROR:  relation "test" does not exist at character 13
+2021-02-19 00:00:05.576 CET [22176] STATEMENT:  INSERT INTO test VALUES(456,5)
+2021-02-19 00:01:39.172 CET [5960] ERROR:  column "abc" does not exist at character 55
+2021-02-19 00:01:39.172 CET [5960] STATEMENT:  INSERT INTO users (userid, login, password) VALUES (1,abc,abc);
+2021-02-19 00:02:01.591 CET [2804] ERROR:  relation "test" does not exist at character 13
+2021-02-19 00:02:01.591 CET [2804] STATEMENT:  INSERT INTO test VALUES(456,5)
+2021-02-19 00:02:10.584 CET [9132] ERROR:  relation "test" does not exist at character 13
+2021-02-19 00:02:10.584 CET [9132] STATEMENT:  INSERT INTO test VALUES(456,5)
+2021-02-19 00:02:12.161 CET [9132] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-19 00:03:25.765 CET [1460] ERROR:  relation "test" does not exist at character 13
+2021-02-19 00:03:25.765 CET [1460] STATEMENT:  INSERT INTO test VALUES(456,5)
+2021-02-19 00:06:16.661 CET [9304] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-19 00:09:51.534 CET [22836] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-19 00:09:51.534 CET [22836] DETAIL:  Key (userid)=(0) already exists.
+2021-02-19 00:09:51.534 CET [22836] STATEMENT:  INSERT INTO users (userid,login,password) VALUES(0,0,0)
+2021-02-19 00:09:51.556 CET [22836] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-19 00:26:54.581 CET [11080] ERROR:  column "hello" does not exist at character 52
+2021-02-19 00:26:54.581 CET [11080] STATEMENT:  INSERT INTO users (userid,login,password) VALUES(2,hello,nobo)
+2021-02-19 00:27:29.644 CET [10476] ERROR:  column "hello" does not exist at character 52
+2021-02-19 00:27:29.644 CET [10476] STATEMENT:  INSERT INTO users (userid,login,password) VALUES(2,hello,nobo)
+2021-02-19 00:27:57.045 CET [5960] ERROR:  column "hello" does not exist at character 52
+2021-02-19 00:27:57.045 CET [5960] STATEMENT:  INSERT INTO users (userid,login,password) VALUES(2,hello,nobo);
+2021-02-19 00:32:11.914 CET [5960] ERROR:  character with byte sequence 0xef 0xbf 0xbd in encoding "UTF8" has no equivalent in encoding "WIN1250"
+2021-02-19 00:32:11.914 CET [5960] STATEMENT:  SELECT * FROM users;
+2021-02-19 00:32:43.783 CET [5960] ERROR:  character with byte sequence 0xef 0xbf 0xbd in encoding "UTF8" has no equivalent in encoding "WIN1250"
+2021-02-19 00:32:43.783 CET [5960] STATEMENT:  SELECT * FROM users;
+2021-02-19 00:36:17.657 CET [5960] ERROR:  column "username" of relation "users" does not exist at character 69
+2021-02-19 00:36:17.657 CET [5960] STATEMENT:  PREPARE registration (int, text, text) AS INSERT INTO users (userid,username,password) VALUES ($1,$2,$3);
+2021-02-19 00:37:00.463 CET [5960] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-19 00:37:00.463 CET [5960] DETAIL:  Key (userid)=(4) already exists.
+2021-02-19 00:37:00.463 CET [5960] STATEMENT:  EXECUTE registration (4,'henlo','bob');
+2021-02-19 00:44:54.359 CET [13000] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-19 00:45:00.585 CET [12656] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-19 00:45:07.578 CET [12516] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-19 00:47:53.733 CET [4408] LOG:  server process (PID 5960) was terminated by exception 0xC000013A
+2021-02-19 00:47:53.733 CET [4408] DETAIL:  Failed process was running: SELECT * FROM users;
+2021-02-19 00:47:53.733 CET [4408] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2021-02-19 00:47:53.734 CET [4408] LOG:  terminating any other active server processes
+2021-02-19 00:47:53.736 CET [19812] WARNING:  terminating connection because of crash of another server process
+2021-02-19 00:47:53.736 CET [19812] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2021-02-19 00:47:53.736 CET [19812] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2021-02-19 00:47:53.765 CET [4408] LOG:  statistics collector process (PID 13224) was terminated by exception 0xC000013A
+2021-02-19 00:47:53.765 CET [4408] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2021-02-19 00:47:53.765 CET [4408] LOG:  all server processes terminated; reinitializing
+2021-02-19 00:47:53.809 CET [9880] LOG:  database system was interrupted; last known up at 2021-02-19 00:41:51 CET
+2021-02-19 00:47:54.062 CET [9880] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-02-19 00:47:54.066 CET [9880] LOG:  redo starts at 0/165DA20
+2021-02-19 00:47:54.066 CET [9880] LOG:  invalid record length at 0/165DB00: wanted 24, got 0
+2021-02-19 00:47:54.066 CET [9880] LOG:  redo done at 0/165DAC8
+2021-02-19 00:47:54.125 CET [4408] LOG:  database system is ready to accept connections
+2021-02-19 00:47:54.668 CET [4408] LOG:  worker process: logical replication launcher (PID 22820) was terminated by exception 0xC000013A
+2021-02-19 00:47:54.668 CET [4408] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2021-02-19 00:47:54.668 CET [4408] LOG:  terminating any other active server processes
+2021-02-19 00:47:54.670 CET [22748] WARNING:  terminating connection because of crash of another server process
+2021-02-19 00:47:54.670 CET [22748] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2021-02-19 00:47:54.670 CET [22748] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2021-02-19 00:47:54.685 CET [4408] LOG:  statistics collector process (PID 8544) was terminated by exception 0xC000013A
+2021-02-19 00:47:54.685 CET [4408] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2021-02-19 00:47:54.686 CET [4408] LOG:  all server processes terminated; reinitializing
+2021-02-19 00:47:54.729 CET [15484] LOG:  database system was interrupted; last known up at 2021-02-19 00:47:54 CET
+2021-02-19 00:47:54.962 CET [15484] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-02-19 00:47:54.965 CET [15484] LOG:  invalid record length at 0/165DB70: wanted 24, got 0
+2021-02-19 00:47:54.965 CET [15484] LOG:  redo is not required
+2021-02-19 00:47:55.029 CET [4408] LOG:  database system is ready to accept connections
+2021-02-19 00:47:55.500 CET [4408] LOG:  worker process: logical replication launcher (PID 20148) was terminated by exception 0xC000013A
+2021-02-19 00:47:55.500 CET [4408] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2021-02-19 00:47:55.501 CET [4408] LOG:  terminating any other active server processes
+2021-02-19 00:47:55.502 CET [7756] WARNING:  terminating connection because of crash of another server process
+2021-02-19 00:47:55.502 CET [7756] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2021-02-19 00:47:55.502 CET [7756] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2021-02-19 00:47:55.518 CET [4408] LOG:  statistics collector process (PID 6332) was terminated by exception 0xC000013A
+2021-02-19 00:47:55.518 CET [4408] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2021-02-19 00:47:55.518 CET [4408] LOG:  all server processes terminated; reinitializing
+2021-02-19 00:47:55.560 CET [5400] LOG:  database system was interrupted; last known up at 2021-02-19 00:47:54 CET
+2021-02-19 00:47:55.799 CET [5400] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-02-19 00:47:55.801 CET [5400] LOG:  invalid record length at 0/165DBE0: wanted 24, got 0
+2021-02-19 00:47:55.801 CET [5400] LOG:  redo is not required
+2021-02-19 00:47:55.855 CET [4408] LOG:  database system is ready to accept connections
+2021-02-20 10:18:07.673 CET [11852] LOG:  listening on IPv6 address "::1", port 5432
+2021-02-20 10:18:07.674 CET [11852] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-02-20 10:18:07.718 CET [16208] LOG:  database system was interrupted; last known up at 2021-02-19 00:47:55 CET
+2021-02-20 10:18:07.962 CET [16208] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-02-20 10:18:07.965 CET [16208] LOG:  invalid record length at 0/165DC50: wanted 24, got 0
+2021-02-20 10:18:07.965 CET [16208] LOG:  redo is not required
+2021-02-20 10:18:08.007 CET [11852] LOG:  database system is ready to accept connections
+2021-02-20 10:18:50.852 CET [14560] ERROR:  column "useid" does not exist at character 25
+2021-02-20 10:18:50.852 CET [14560] HINT:  Perhaps you meant to reference the column "users.userid".
+2021-02-20 10:18:50.852 CET [14560] STATEMENT:  DELETE FROM users WHERE useid=4;
+2021-02-20 10:22:43.223 CET [14560] ERROR:  syntax error at or near "ON" at character 8
+2021-02-20 10:22:43.223 CET [14560] STATEMENT:  UPDATE ON users(nickname) WHERE userid=0 VALUES ('hello');
+2021-02-20 10:22:51.936 CET [14560] ERROR:  syntax error at or near "(" at character 13
+2021-02-20 10:22:51.936 CET [14560] STATEMENT:  UPDATE users(nickname) WHERE userid=0 VALUES ('hello');
+2021-02-20 10:25:36.045 CET [14560] ERROR:  syntax error at or near "hello" at character 92
+2021-02-20 10:25:36.045 CET [14560] STATEMENT:  UPDATE  users SET nickname='hello', email='lol WHERE userid=0;
+	UPDATE  users SET nickname='hello', email='lol' WHERE userid=0;
+	SELECT * FROM users;
+	=
+	'
+	=
+	SELECT * FROM users;
+2021-02-20 10:49:47.498 CET [4856] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 11:02:12.204 CET [14560] ERROR:  syntax error at or near "{" at character 46
+2021-02-20 11:02:12.204 CET [14560] STATEMENT:  PREPARE updateinfo AS UPDATE users SET email={0} VALUES ($0);
+2021-02-20 11:03:42.974 CET [14560] ERROR:  syntax error at or near "{" at character 46
+2021-02-20 11:03:42.974 CET [14560] STATEMENT:  PREPARE updateinfo AS UPDATE users SET email={0} VALUES ($0) WHERE userid=0;
+2021-02-20 11:04:25.153 CET [14560] ERROR:  syntax error at or near "{" at character 46
+2021-02-20 11:04:25.153 CET [14560] STATEMENT:  PREPARE updateinfo AS UPDATE users SET email={0} WHERE userid=0;
+2021-02-20 11:09:30.467 CET [14560] ERROR:  syntax error at or near ""PREPARE registration (int, text, text) AS INSERT INTO users (userid,login,password) VALUES ($1,$2,$3);"" at character 1
+2021-02-20 11:09:30.467 CET [14560] STATEMENT:  "PREPARE registration (int, text, text) AS INSERT INTO users (userid,login,password) VALUES ($1,$2,$3);"
+	"
+	=
+	"
+	-
+	'
+	'
+	END
+	;
+2021-02-20 11:11:02.345 CET [14560] ERROR:  syntax error at or near "{" at character 46
+2021-02-20 11:11:02.345 CET [14560] STATEMENT:  PREPARE updateinfo AS UPDATE users SET email={1} WHERE userid=0 VALUES($1);
+2021-02-20 11:11:21.320 CET [14560] ERROR:  syntax error at or near "{" at character 52
+2021-02-20 11:11:21.320 CET [14560] STATEMENT:  PREPARE updateinfo(text) AS UPDATE users SET email={1} WHERE userid=0 VALUES($1);
+2021-02-20 11:12:19.796 CET [14560] ERROR:  syntax error at or near "VALUES" at character 74
+2021-02-20 11:12:19.796 CET [14560] STATEMENT:  PREPARE updateinfo(text) AS UPDATE users SET email=(text) WHERE userid=0 VALUES($1);
+2021-02-20 11:25:40.322 CET [3064] ERROR:  syntax error at or near "{" at character 61
+2021-02-20 11:25:40.322 CET [3064] STATEMENT:  PREPARE editUserData (text, text) AS UPDATE users SET email={1}, image={2} WHERE userid=0
+2021-02-20 11:25:40.345 CET [3064] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 11:26:08.134 CET [10824] ERROR:  syntax error at or near "{" at character 61
+2021-02-20 11:26:08.134 CET [10824] STATEMENT:  PREPARE editUserData (text, text) AS UPDATE users SET email={1}, image={2} WHERE userid=0
+2021-02-20 11:26:08.156 CET [10824] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 11:26:43.806 CET [14560] ERROR:  prepared statement "updateinfo" already exists
+2021-02-20 11:26:43.806 CET [14560] STATEMENT:  PREPARE updateinfo(text) AS UPDATE users SET email=$1 WHERE userid=0;
+2021-02-20 11:26:46.939 CET [11852] LOG:  server process (PID 14560) was terminated by exception 0xC000013A
+2021-02-20 11:26:46.939 CET [11852] DETAIL:  Failed process was running: PREPARE updateinfo(text) AS UPDATE users SET email=$1 WHERE userid=0;
+2021-02-20 11:26:46.939 CET [11852] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2021-02-20 11:26:46.939 CET [11852] LOG:  terminating any other active server processes
+2021-02-20 11:26:46.941 CET [21648] WARNING:  terminating connection because of crash of another server process
+2021-02-20 11:26:46.941 CET [21648] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2021-02-20 11:26:46.941 CET [21648] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2021-02-20 11:26:46.952 CET [11852] LOG:  statistics collector process (PID 20836) was terminated by exception 0xC000013A
+2021-02-20 11:26:46.952 CET [11852] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2021-02-20 11:26:46.954 CET [11852] LOG:  all server processes terminated; reinitializing
+2021-02-20 11:26:46.994 CET [11552] LOG:  database system was interrupted; last known up at 2021-02-20 10:28:08 CET
+2021-02-20 11:26:47.410 CET [11552] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-02-20 11:26:47.413 CET [11552] LOG:  redo starts at 0/165E630
+2021-02-20 11:26:47.413 CET [11552] LOG:  invalid record length at 0/165E710: wanted 24, got 0
+2021-02-20 11:26:47.413 CET [11552] LOG:  redo done at 0/165E6D8
+2021-02-20 11:26:47.445 CET [11852] LOG:  database system is ready to accept connections
+2021-02-20 11:26:51.227 CET [11852] LOG:  received fast shutdown request
+2021-02-20 11:26:51.233 CET [11852] LOG:  aborting any active transactions
+2021-02-20 11:26:51.237 CET [11852] LOG:  worker process: logical replication launcher (PID 9512) exited with exit code 1
+2021-02-20 11:26:51.245 CET [5096] LOG:  shutting down
+2021-02-20 11:26:51.287 CET [11852] LOG:  database system is shut down
+2021-02-20 11:26:55.677 CET [12768] LOG:  listening on IPv6 address "::1", port 5432
+2021-02-20 11:26:55.677 CET [12768] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-02-20 11:26:55.724 CET [4380] LOG:  database system was shut down at 2021-02-20 11:26:51 CET
+2021-02-20 11:26:55.747 CET [12768] LOG:  database system is ready to accept connections
+2021-02-20 11:28:06.599 CET [13012] ERROR:  column "image" of relation "users" does not exist at character 65
+2021-02-20 11:28:06.599 CET [13012] STATEMENT:  PREPARE editUserData (text, text) AS UPDATE users SET email=$1, image=$2 WHERE userid=0
+2021-02-20 11:28:06.624 CET [13012] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 11:30:10.653 CET [14948] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 12:16:47.067 CET [2500] ERROR:  relation "stats" does not exist at character 15
+2021-02-20 12:16:47.067 CET [2500] STATEMENT:  SELECT * FROM stats;
+2021-02-20 12:33:15.859 CET [2500] ERROR:  syntax error at or near "user" at character 13
+2021-02-20 12:33:15.859 CET [2500] STATEMENT:  DELETE from user;
+2021-02-20 12:50:12.498 CET [6780] ERROR:  syntax error at or near "BY" at character 31
+2021-02-20 12:50:12.498 CET [6780] STATEMENT:  SELECT * FROM scoreboard ODER BY wins ASC
+2021-02-20 12:50:14.005 CET [6780] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 12:50:40.609 CET [1592] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 12:53:09.897 CET [19108] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 12:55:56.059 CET [2500] ERROR:  relation "multimediacontent" does not exist at character 13
+2021-02-20 12:55:56.059 CET [2500] STATEMENT:  SELECT FROM multimediacontent
+	;
+2021-02-20 12:56:43.052 CET [2500] ERROR:  syntax error at or near ";" at character 215
+2021-02-20 12:56:43.052 CET [2500] STATEMENT:  CREATE TABLE multimedia_content(
+	mcid int primary key,
+	title varchar(32),
+	artist varchar(32),
+	album varchar(32),
+	rating float,
+	genre varchar(32),
+	lenght int,
+	filetype varchar(8),
+	filesize int,
+	filepath varchar(64)
+	;
+	)
+	;
+2021-02-20 12:57:47.657 CET [2500] ERROR:  cannot drop table multimedia_content because other objects depend on it
+2021-02-20 12:57:47.657 CET [2500] DETAIL:  constraint library_mcid_fkey on table library depends on table multimedia_content
+	constraint playlist_mcid_fkey on table playlist depends on table multimedia_content
+	constraint playlist_history_mcid_fkey on table playlist_history depends on table multimedia_content
+2021-02-20 12:57:47.657 CET [2500] HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2021-02-20 12:57:47.657 CET [2500] STATEMENT:  DROP TABLE multimedia_content
+	;
+2021-02-20 12:59:46.097 CET [2500] ERROR:  syntax error at or near "0" at character 33
+2021-02-20 12:59:46.097 CET [2500] STATEMENT:  INSERT INTO multimedia_content (0, 'Test_Song', 'testartist', 'testalbum', 3.5, 'rock', 45, )
+	;
+2021-02-20 13:00:22.091 CET [2500] ERROR:  syntax error at or near "0" at character 33
+2021-02-20 13:00:22.091 CET [2500] STATEMENT:  INSERT INTO multimedia_content (0, 'Test_Song', 'testartist', 'testalbum', 3.5, 'rock', 45, 'yt', 0, 'http://youtube.com');
+2021-02-20 13:18:20.876 CET [4460] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 13:18:30.156 CET [12148] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 13:19:00.934 CET [15868] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 13:19:20.659 CET [21152] ERROR:  column "testsong" does not exist at character 19
+2021-02-20 13:19:20.659 CET [21152] STATEMENT:  EXECUTE addMmc (1,testSong,songo)
+2021-02-20 13:20:50.551 CET [17612] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 13:43:23.638 CET [23056] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 13:44:10.894 CET [11528] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 13:47:44.710 CET [8660] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 14:02:37.074 CET [4972] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 14:02:57.255 CET [7212] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 14:04:00.507 CET [2640] ERROR:  insert or update on table "playlist" violates foreign key constraint "playlist_mcid_fkey"
+2021-02-20 14:04:00.507 CET [2640] DETAIL:  Key (mcid)=(5) is not present in table "multimedia_content".
+2021-02-20 14:04:00.507 CET [2640] STATEMENT:  INSERT INTO playlist VALUES (5,4)
+2021-02-20 14:04:01.908 CET [2640] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 14:05:02.544 CET [11916] ERROR:  insert or update on table "playlist" violates foreign key constraint "playlist_mcid_fkey"
+2021-02-20 14:05:02.544 CET [11916] DETAIL:  Key (mcid)=(5) is not present in table "multimedia_content".
+2021-02-20 14:05:02.544 CET [11916] STATEMENT:  INSERT INTO playlist VALUES (5,4)
+2021-02-20 14:18:05.116 CET [21676] ERROR:  syntax error at or near "FROM" at character 19
+2021-02-20 14:18:05.116 CET [21676] STATEMENT:  UPDATE song_order FROM playlist SET song_order=2 WHERE song_order=-1
+2021-02-20 14:18:06.483 CET [21676] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 14:32:33.259 CET [2496] ERROR:  column "songorder" does not exist at character 36
+2021-02-20 14:32:33.259 CET [2496] HINT:  Perhaps you meant to reference the column "playlist.song_order".
+2021-02-20 14:32:33.259 CET [2496] STATEMENT:  SELECT mcid FROM playlist ORDER BY songorder ASC
+2021-02-20 14:32:34.936 CET [2496] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 14:32:42.513 CET [23464] ERROR:  column "songorder" does not exist at character 36
+2021-02-20 14:32:42.513 CET [23464] HINT:  Perhaps you meant to reference the column "playlist.song_order".
+2021-02-20 14:32:42.513 CET [23464] STATEMENT:  SELECT mcid FROM playlist ORDER BY songorder ASC
+2021-02-20 14:32:43.957 CET [23464] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 14:32:56.841 CET [21124] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 14:56:02.648 CET [6268] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 15:01:07.588 CET [9092] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 15:02:09.212 CET [21332] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 15:02:29.910 CET [17192] ERROR:  invalid input syntax for type double precision: "3,4" at character 72
+2021-02-20 15:02:29.910 CET [17192] STATEMENT:  EXECUTE addMmc (7,'Yoo','https://www.youtube.com/watch?v=inMCT9fXjg4', '3,4')
+2021-02-20 15:04:56.238 CET [2500] ERROR:  column "rating" is of type double precision but expression is of type text at character 54
+2021-02-20 15:04:56.238 CET [2500] HINT:  You will need to rewrite or cast the expression.
+2021-02-20 15:04:56.238 CET [2500] STATEMENT:  INSERT into multimedia_content(mcid,rating) VALUES(6,replace('3,4',',','.'));
+2021-02-20 15:05:24.771 CET [2500] ERROR:  duplicate key value violates unique constraint "multimedia_content_pkey"
+2021-02-20 15:05:24.771 CET [2500] DETAIL:  Key (mcid)=(6) already exists.
+2021-02-20 15:05:24.771 CET [2500] STATEMENT:  INSERT into multimedia_content(mcid,rating) VALUES(6,replace('3,4',',','.')::float);
+2021-02-20 17:36:10.747 CET [14256] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 17:36:42.856 CET [17656] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 17:38:49.855 CET [22124] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 17:39:00.104 CET [21208] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 17:40:14.028 CET [23216] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 17:55:42.002 CET [2500] ERROR:  update or delete on table "multimedia_content" violates foreign key constraint "playlist_mcid_fkey" on table "playlist"
+2021-02-20 17:55:42.002 CET [2500] DETAIL:  Key (mcid)=(2) is still referenced from table "playlist".
+2021-02-20 17:55:42.002 CET [2500] STATEMENT:  DELETE FROM multimedia_content;
+2021-02-20 17:56:42.664 CET [16576] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:04:58.834 CET [15856] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:21:58.157 CET [15308] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:22:33.793 CET [13072] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:22:37.539 CET [18864] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:23:45.178 CET [13116] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:24:05.714 CET [21740] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:33:16.106 CET [21932] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-20 18:33:16.106 CET [21932] DETAIL:  Key (userid)=(0) already exists.
+2021-02-20 18:33:16.106 CET [21932] STATEMENT:  EXECUTE registration (0,'?KH???d%?!s??????s? v??;S?t???','Hox???=?j???G????;?#??.,[?')
+2021-02-20 18:33:39.829 CET [8732] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-20 18:33:39.829 CET [8732] DETAIL:  Key (userid)=(0) already exists.
+2021-02-20 18:33:39.829 CET [8732] STATEMENT:  EXECUTE registration (0,'?KH???d%?!s??????s? v??;S?t???','Hox???=?j???G????;?#??.,[?')
+2021-02-20 18:35:45.816 CET [19908] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-20 18:35:45.816 CET [19908] DETAIL:  Key (userid)=(0) already exists.
+2021-02-20 18:35:45.816 CET [19908] STATEMENT:  EXECUTE registration (0,'?KH???d%?!s??????s? v??;S?t???','Hox???=?j???G????;?#??.,[?')
+2021-02-20 18:42:20.272 CET [16668] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2021-02-20 18:42:20.272 CET [16668] DETAIL:  Key (userid)=(0) already exists.
+2021-02-20 18:42:20.272 CET [16668] STATEMENT:  EXECUTE registration (0,'?KH???d%?!s??????s? v??;S?t???','Hox???=?j???G????;?#??.,[?')
+2021-02-20 18:42:20.284 CET [16668] ERROR:  column "name" does not exist at character 56
+2021-02-20 18:42:20.284 CET [16668] STATEMENT:  PREPARE findUsername AS SELECT userid FROM users WHERE name=$1
+2021-02-20 18:42:22.741 CET [16668] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:42:35.809 CET [7172] ERROR:  column "name" does not exist at character 56
+2021-02-20 18:42:35.809 CET [7172] STATEMENT:  PREPARE findUsername AS SELECT userid FROM users WHERE name=$1
+2021-02-20 18:42:38.617 CET [7172] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:43:22.571 CET [18404] ERROR:  column "username" does not exist at character 56
+2021-02-20 18:43:22.571 CET [18404] STATEMENT:  PREPARE findUsername AS SELECT userid FROM users WHERE username=$1
+2021-02-20 18:43:25.388 CET [18404] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:46:00.586 CET [24076] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:46:36.346 CET [2500] ERROR:  update or delete on table "users" violates foreign key constraint "scoreboard_userid_fkey" on table "scoreboard"
+2021-02-20 18:46:36.346 CET [2500] DETAIL:  Key (userid)=(1) is still referenced from table "scoreboard".
+2021-02-20 18:46:36.346 CET [2500] STATEMENT:  DELETE FROM users;
+2021-02-20 18:47:26.386 CET [18972] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:47:38.566 CET [21208] ERROR:  duplicate key value violates unique constraint "users_login_key"
+2021-02-20 18:47:38.566 CET [21208] DETAIL:  Key (login)=(?KH???d%?!s??????s? v??;S?t???) already exists.
+2021-02-20 18:47:38.566 CET [21208] STATEMENT:  EXECUTE registration (1,'?KH???d%?!s??????s? v??;S?t???','Hox???=?j???G????;?#??.,[?')
+2021-02-20 18:55:00.211 CET [20040] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:56:17.068 CET [7484] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 18:56:46.197 CET [2500] ERROR:  relation "stats" does not exist at character 15
+2021-02-20 18:56:46.197 CET [2500] STATEMENT:  SELECT * FROM stats;
+2021-02-20 18:56:50.348 CET [2500] ERROR:  relation "statistic" does not exist at character 15
+2021-02-20 18:56:50.348 CET [2500] STATEMENT:  SELECT * FROM statistic;
+2021-02-20 19:11:35.354 CET [11884] ERROR:  could not determine data type of parameter $1
+2021-02-20 19:11:35.354 CET [11884] STATEMENT:  SELECT name FROM multimedia_content WHERE mcid=$3
+2021-02-20 19:11:59.157 CET [24000] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 19:11:59.158 CET [11884] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 19:13:16.955 CET [15844] ERROR:  could not determine data type of parameter $1
+2021-02-20 19:13:16.955 CET [15844] STATEMENT:  SELECT name FROM multimedia_content WHERE mcid=$3
+2021-02-20 19:13:26.311 CET [5616] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-02-20 19:13:26.311 CET [15844] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

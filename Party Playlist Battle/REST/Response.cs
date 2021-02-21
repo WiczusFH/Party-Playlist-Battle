@@ -7,11 +7,7 @@ namespace Party_Playlist_Battle
 {
     public class Response
     {
-
-        public Response() {
-
-        }
-        public string formulateResponse() {
+        public static string formulateResponse(Request req, Status_Code code) {
             string response = "HTTP/1.1 200 OK\r\n" +
             "Server: Wiczus\r\n" +
             "Content - Type: text / plain\r\n" +
