@@ -1,147 +1,88 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Party_Playlist_Battle.Connection_Listener">
-    <Position X="5.25" Y="2.25" Width="1.5" />
+    <Position X="2.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACEIAAAAAQCAAAAhAAAACAABAIAAAAAAIEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAACAAAAgAAAACAAAAIgAAAAAIEAAAAEAAAA=</HashCode>
       <FileName>REST\ConnectionListener.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Party_Playlist_Battle.Battle">
+    <Position X="4.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBRAAAAAiAABAAAACAAACAIBAAABAAAAAAAAAEAAQAA=</HashCode>
+      <FileName>Battle\Battle.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Connection_Listener" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Party_Playlist_Battle.Active_Connection">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAFABAQABAAABAAAAAAgBgAAAAAAABAAAAiA=</HashCode>
+      <FileName>REST\Active_Connection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Connection_Listener" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Party_Playlist_Battle.Server">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>REST\Server.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="listener" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Party_Playlist_Battle.DB_Tools">
+    <Position X="9.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IA0gAMQIAEAQQAAAACAAAAAAAAAACQAIAAAADAAAAAA=</HashCode>
+      <FileName>DB\DB_Tools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Party_Playlist_Battle.Response">
+    <Position X="9.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAAAAAAAAAAAIACAAAAAAAAAAAAEABAAAAAAA=</HashCode>
+      <FileName>REST\Response.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Party_Playlist_Battle.communication">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>HAUoAAQIAQAYAAACAAAAAAICgAAAAAAAAQAAgAAAEAA=</HashCode>
+      <FileName>REST\communication.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Active_Connection" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Party_Playlist_Battle.Active_User">
-    <Position X="9" Y="2.25" Width="1.5" />
+  <Class Name="Party_Playlist_Battle.Request" Collapsed="true">
+    <Position X="9.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ActiveUser.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Party_Playlist_Battle.Library_Manager">
-    <Position X="10.75" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DB\Library_Manager.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Party_Playlist_Battle.Login_Manager">
-    <Position X="12.5" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DB\Login_Manager.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Party_Playlist_Battle.Playlist">
-    <Position X="5.25" Y="6.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAIAAAAAMAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
-      <FileName>DB\Playlist.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Party_Playlist_Battle.Battle">
-    <Position X="10.75" Y="4" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAJAAAAACAABAAAAIAAAAAAAAEAAAAAAAAAAAAAEAAA=</HashCode>
-      <FileName>Battle.cs</FileName>
+      <HashCode>AAUAAACAAAAAABAACAAACAAACABCAAAQAAAAAICABCA=</HashCode>
+      <FileName>REST\Request.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="user_battle_info" />
+      <Property Name="REST_Tools" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Party_Playlist_Battle.Profile_Manager">
-    <Position X="14.25" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAIAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DB\Profile_Manager.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Party_Playlist_Battle.Active_Connection">
-    <Position X="7.25" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>BAUAAgAAAFABAACBAAABCAAQAAEAgAAAAAAABAAAAiA=</HashCode>
-      <FileName>REST\Active_Connection.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Active_User" />
-      <Property Name="Library_Manager" />
-      <Property Name="Login_Manager" />
-      <Property Name="Profile_Manager" />
-      <Property Name="Playlist_Manager" />
-      <Property Name="Battle" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="Party_Playlist_Battle.Playlist_Manager">
-    <Position X="16" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAIAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DB\Playlist_Manager.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Party_Playlist_Battle.Server">
-    <Position X="3" Y="4" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAQAgAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>REST\Server.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="listener" />
-      <Property Name="Playlist" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="Party_Playlist_Battle.Response_Tools">
-    <Position X="14.25" Y="7.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>ACAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Response_Tools.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Party_Playlist_Battle.DB_Tools">
-    <Position X="14.25" Y="6" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>IAUgAMQIAEAQQAAAACAAAAAAAAAACAAIAAAAAAAAAAA=</HashCode>
-      <FileName>DB\DB_Tools.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Party_Playlist_Battle.Response">
-    <Position X="10.75" Y="7.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
-      <FileName>REST\Response.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Party_Playlist_Battle.REST_Tools">
-    <Position X="7.25" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>REST_Tools.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Struct Name="Party_Playlist_Battle.user_battle_info">
-    <Position X="14.25" Y="4" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAAECAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>user_battle_info.cs</FileName>
-    </TypeIdentifier>
-  </Struct>
   <Enum Name="Party_Playlist_Battle.Battle_Actions">
-    <Position X="16" Y="6" Width="1.5" />
+    <Position X="13" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAEAAAAAAAAAACAAAAAAgQAAAAAA=</HashCode>
-      <FileName>BattleChoices.cs</FileName>
+      <FileName>Battle\BattleChoices.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Party_Playlist_Battle.Status_Code">
-    <Position X="7" Y="9" Width="1.5" />
+    <Position X="13" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>REST\Status_Code.cs</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="Party_Playlist_Battle.Db_Tables">
-    <Position X="17.75" Y="4.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>IAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAQAAAIAAAAEAA=</HashCode>
-      <FileName>db_tables.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

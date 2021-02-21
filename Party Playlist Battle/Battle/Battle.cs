@@ -33,7 +33,7 @@ namespace Party_Playlist_Battle
             timer.Wait();
             return log;
         }
-        public void startTimerAsync()
+        public virtual void startTimerAsync()
         {
             Console.WriteLine("Battle will start soon. ");
             for (int i = 15; i >= 0; i--)
@@ -87,31 +87,37 @@ namespace Party_Playlist_Battle
                     log += "Our tournament ended in a draw between ";
                     foreach (user_battle_info player in winnerList)
                     {
-                        log += player.username + " ";
+                        log += player.username + " and ";
                     }
+                    log = log.Remove(log.Length - 5);
                     log += ". What a travesty!!!\r\n";
                     currentAdminId = -1;
                 }
                 else
                 {
                     log += winnerList[0].username + " is the Winner! Congrats!\r\n";
-                    currentAdminId = DB_Tools.nameToUserid(winnerList[0].username);
-                    DB_Tools.incrementUserWin(DB_Tools.nameToUserid(winnerList[0].username));
+                    currentAdminId=finishResult(winnerList);
+                    //currentAdminId = DB_Tools.nameToUserid(winnerList[0].username);
+                    //DB_Tools.incrementUserWin(DB_Tools.nameToUserid(winnerList[0].username));
                 }
             }
             else {
                 log += active_users[0].username + " is the Winner! Congrats!\r\n";
-                currentAdminId = DB_Tools.nameToUserid(active_users[0].username);
-                DB_Tools.incrementUserWin(DB_Tools.nameToUserid(active_users[0].username));
+                currentAdminId=finishResult(active_users);
+                //currentAdminId = DB_Tools.nameToUserid(active_users[0].username);
+                //DB_Tools.incrementUserWin(DB_Tools.nameToUserid(active_users[0].username));
             }
             foreach (user_battle_info user in active_users) {
                 user.battle_score = 0;
             }
             blocked_users = new List<user_battle_info>();
             active_users = new List<user_battle_info>();
-            //user_infos = new List<user_battle_info>();
             battleActive = false;
 
+        }
+        public virtual int finishResult(List<user_battle_info> active_users) { 
+            DB_Tools.incrementUserWin(DB_Tools.nameToUserid(active_users[0].username));
+            return DB_Tools.nameToUserid(active_users[0].username); ;
         }
 
         /// <summary>
@@ -171,9 +177,7 @@ namespace Party_Playlist_Battle
             return 0;
         }
 
-        public void changename(user_battle_info pA) {
-            pA.username = "hello";
-        }
+
         public void fight(user_battle_info pA, user_battle_info pB) {
             int favorA = 0;
             for (int i = 0; i < 5; i++) {
@@ -196,5 +200,6 @@ namespace Party_Playlist_Battle
             }
             log += "\r\n";
         }
+
     }
 }

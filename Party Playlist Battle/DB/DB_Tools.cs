@@ -10,6 +10,7 @@ namespace Party_Playlist_Battle
     public static class DB_Tools
     {
         static string connstring = "Host=localhost;Username=postgres;Database=postgres";
+
         public static bool db_register(string username, string password)
         {
             using (SHA256 hasher = SHA256.Create()) {
@@ -68,7 +69,6 @@ namespace Party_Playlist_Battle
                 conn.Close();
                 return false;
             }
-            Console.WriteLine("aye");
             reader.Close();
             conn.Close();
             return true;

@@ -23,6 +23,15 @@ namespace Party_Playlist_Battle
             findToken();
             findCType();
         }
+
+        public communication REST_Tools
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         void findLoc() {
             if (message != null)
             {

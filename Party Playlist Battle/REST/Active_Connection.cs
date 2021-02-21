@@ -34,18 +34,18 @@ namespace Party_Playlist_Battle
                 Response resp;
                 Console.WriteLine($"Connection alive with id: {this.id}. ");
 
-                while (!shutdown) {
+                //while (!shutdown) {
                     readsize = clistream.Read(buffer, 0, buffer.Length);
                     req = new Request(ASCIIEncoding.ASCII.GetString(buffer, 0, readsize));
-                    if (!req.keepalive) {
-                        shutdown = true;
-                    }
+                    //if (!req.keepalive) {
+                    //    shutdown = true;
+                    //}
                     Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer, 0, readsize));
-                    resp = REST_Tools.Handler(req,battle);
+                    resp = communication.Handler(req,battle);
                     Console.WriteLine(resp.formulateResponse());
                     clistream.Write(ASCIIEncoding.ASCII.GetBytes(resp.formulateResponse(), 0, ASCIIEncoding.ASCII.GetBytes(resp.formulateResponse()).Length));
                     
-                }
+                //}
                 clistream.Close();
                 client.Close();
             });
@@ -70,7 +70,7 @@ namespace Party_Playlist_Battle
                     shutdown = true;
                 }
                 Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer, 0, readsize));
-                resp = REST_Tools.Handler(req,battle);
+                resp = communication.Handler(req,battle);
                 Console.WriteLine(resp.formulateResponse());
                 clistream.Write(ASCIIEncoding.ASCII.GetBytes(resp.formulateResponse(), 0, ASCIIEncoding.ASCII.GetBytes(resp.formulateResponse()).Length));
 
@@ -81,39 +81,10 @@ namespace Party_Playlist_Battle
         }
 
 
-        public Socket user_socket {
-            get => default;
-            set {
-            }
-        }     
-
-        public Battle Battle {
-            get => default;
-            set {
-            }
-        }
-
-        /// <summary>
-        /// create instance of login manager, until a login is completed, create active user when logged in.
-        /// </summary>
-        public void run() {
-            throw new System.NotImplementedException();
-        }
-
         public void ip_block() {
             throw new System.NotImplementedException();
         }
 
-        public void receive_message() {
-            throw new System.NotImplementedException();
-        }
 
-        public void join_battle() {
-            throw new System.NotImplementedException();
-        }
-
-        public void display_scoreboard() {
-            throw new System.NotImplementedException();
-        }
     }
 }

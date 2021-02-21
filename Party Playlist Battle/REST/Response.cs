@@ -18,12 +18,25 @@ namespace Party_Playlist_Battle
             additionalPayload = AdditionalPayload;
         }
 
+        public communication REST_Tools
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public string formulateResponse() {
-            string response = $"HTTP/1.1 200 {status}\r\n" +
+            string statusnumber = "200";
+            if (status == Status_Code.NOK) {
+                statusnumber = "400";
+            }
+
+            string response = $"HTTP/1.1 {statusnumber} {status}\r\n" +
             "Server: Wiczus\r\n" +
             "Content - Type: Application/json\r\n" +
             "Connection: close\r\n" +
-            "Content - Lenght: 0\r\n";
+            $"Content - Lenght: {additionalPayload.Length}\r\n";
             if (additionalHeader != null)
             {
                 foreach (string line in additionalHeader)

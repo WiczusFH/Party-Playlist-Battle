@@ -8,6 +8,9 @@ namespace Party_Playlist_Battle
     {
         public user_battle_info(string Username) {
             actions = new Battle_Actions[5];
+            for (int i = 0; i < 5; i++) {
+                actions[i] = Battle_Actions.NULL;
+            }
             username = Username;
             battle_score = 0;
         }

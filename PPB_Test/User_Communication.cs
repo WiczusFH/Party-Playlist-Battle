@@ -24,5 +24,26 @@ namespace PPB_Test
             Assert.IsTrue(req.payload.StartsWith("Hello"));
         
         }
+        [TestMethod]
+        public void response()
+        {
+            string message = "GET / HTTP/1.1\r\n" +
+            "User - Agent: PostmanRuntime / 7.26.10\r\n" +
+            "Accept: */*\r\n" +
+            "Postman-Token: ec35d5f0-6f20-4f2c-9960-e8b5d3345f81\r\n" +
+            "Host: 127.0.0.1:8080\r\n" +
+            "Accept-Encoding: gzip, deflate, br\r\n" +
+            "Connection: keep-alive\r\n\r\n" +
+            "Hello\r\n\r\n";
+            Request req = new Request(message);
+
+            Response resp=new Response(req, Status_Code.NOK, AdditionalPayload: "Test this message.");
+
+            string respStr = resp.formulateResponse();
+            string[] respStrSplit = respStr.Split("\r\n");
+            Assert.AreEqual("Test this message.",respStrSplit[respStrSplit.Length-3]);
+        }
+
+        //Static methods make mocking impossible. 
     }
 }

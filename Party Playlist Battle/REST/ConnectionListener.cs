@@ -65,11 +65,5 @@ namespace Party_Playlist_Battle
             }
         }
 
-        public Active_Connection Active_Connection {
-            get => default;
-            set {
-            }
-        }
-
     }
 }

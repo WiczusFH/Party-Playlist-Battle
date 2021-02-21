@@ -10,6 +10,7 @@ namespace Party_Playlist_Battle
         Paper,
         Scissors,
         Spock,
-        Lizard
+        Lizard,
+        NULL
     }
 }
