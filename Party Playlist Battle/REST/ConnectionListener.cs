@@ -18,22 +18,22 @@ namespace Party_Playlist_Battle
         List<Active_Connection> connections = new List<Active_Connection>();
         TcpListener listener = new TcpListener(IPAddress.Loopback, 10001);
 
-        public async void startAsync() {
-            await Task.Run(() => {
-                listener.Start();
-                for (int i = 0; i < 25; i++) {
-                    Console.WriteLine("Looking for cliens. ");
-                    connections.Add(new Active_Connection(listener.AcceptTcpClient(), i,battle));
-                }
-            });
-        }
+        //public async void startAsync() {
+        //    await Task.Run(() => {
+        //        listener.Start();
+        //        for (int i = 0; i < 25; i++) {
+        //            Console.WriteLine("Looking for clients. ");
+        //            connections.Add(new Active_Connection(listener.AcceptTcpClient(), i,battle));
+        //        }
+        //    });
+        //}
 
         public void start()
         {
             listener.Start();
             for (int i = 0; i < 2500; i++)
             {
-                Console.WriteLine("Looking for cliens. ");
+                Console.WriteLine("Looking for clients. ");
                 connections.Add(new Active_Connection(listener.AcceptTcpClient(), i, battle)); ;
             }
         }
